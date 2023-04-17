@@ -1,0 +1,16 @@
+{
+    "name": "43-grupe-portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "dead-server --host=localhost --port=4307",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Rimantas (https://github.com/belauzas)",
+    "license": "MIT",
+    "devDependencies": {
+        "dead-server": "^1.0.9"
+    }
+}
