@@ -22,6 +22,12 @@ from #FF5166 to #FE9055  buttons text ant etc.</div>
 from #9085EA to #7365E3</div>
 <div><br></>
 <div><br></>
+<div>Colors examples</>
+
+![Alt text](./img/colors.png)
+
+<div><br></>
+<div><br></>
 <div>Some basic page elements</>
 
-![Alt text](img/some-basic-elements.png)
+![Alt text](./img/some-basic-elements.png)
