@@ -10,7 +10,7 @@ This project is about teamwork to create a website. A group of students who work
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://github.com/front-end-by-rimantas/43-grupe-portfolio-ewebot
+Site published at: https://front-end-by-rimantas.github.io/43-grupe-portfolio-ewebot/
 
 Design: [Ewebot](https://ewebotwp.com/home-10/?fbclid=IwAR38UbrKhivX_0eXkG06LaysYAbWk2MmGvuRnR7UY3jmK0GSQq-9PF7grYk)
 
