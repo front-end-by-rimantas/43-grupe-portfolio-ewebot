@@ -66,11 +66,11 @@ There is no tests for this project.
 
 ## 🎅 Authors
 
-Rimantas: [Github](https://github.com/belauzas)
-Nerijus: [Github](https://github.com/NerijusBun)
-Aušra: [Github](https://github.com/AusraMundus)
-Povilas: [Github](https://github.com/baubasdrsk)
-Saulius: [Github](https://github.com/sauliuskarlinskas)
+Rimantas: [Github](https://github.com/belauzas)\
+Nerijus: [Github](https://github.com/NerijusBun)\
+Aušra: [Github](https://github.com/AusraMundus)\
+Povilas: [Github](https://github.com/baubasdrsk)\
+Saulius: [Github](https://github.com/sauliuskarlinskas)\
 Karolis: [Github](https://github.com/karolis879)
 
 ## ⚠️ License
