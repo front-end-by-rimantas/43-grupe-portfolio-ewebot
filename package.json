@@ -14,6 +14,32 @@
         "CSS",
         "JS"
     ],
+    "contributors": [
+        {
+        "name" : "Aušra",
+        "url" : "https://github.com/AusraMundus"
+        },
+
+        {
+        "name" : "Povilas",
+        "url" : "https://github.com/baubasdrsk"
+        },
+
+        {
+        "name" : "Nerijus",    
+        "url" : "https://github.com/NerijusBun"
+        },
+
+        {
+        "name" : "Karolis",    
+        "url" : "https://github.com/karolis879"
+        },
+         
+        {
+        "name" : "Saulius",        
+        "url" : "https://github.com/sauliuskarlinskas"
+        }
+    ],
     "author": "Rimantas (https://github.com/belauzas)",
     "license": "MIT",
     "devDependencies": {
