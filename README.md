@@ -1,10 +1,4 @@
-![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
-![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)
-![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
-![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
-[![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
-
-# Martin
+# Ewebot
 
 _website design project_
 
@@ -12,11 +6,13 @@ _website design project_
 
 ## 🌟 About
 
+This project is about teamwork to create a website. A group of students who work together to complete specific tasks and achieve a common goal. Practical elements of teamwork include planning workflows, regular meetings, maintaining open channels of communication, and other collaborative activities.
+
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://front-end-by-rimantas.github.io/43-grupe-portfolio/
+Site published at: https://front-end-by-rimantas.github.io/43-grupe-portfolio-ewebot/
 
-Design: [Martin](https://www.pxdraft.com/themeforest/martin/)
+Design: [Ewebot](https://ewebotwp.com/home-10/?fbclid=IwAR38UbrKhivX_0eXkG06LaysYAbWk2MmGvuRnR7UY3jmK0GSQq-9PF7grYk)
 
 ## 🎯 Project features/goals
 
@@ -28,6 +24,12 @@ Design: [Martin](https://www.pxdraft.com/themeforest/martin/)
 -   content rendering
 -   gallery
 -   slider
+-   communication
+-   problem-solving
+-   creativity
+-   adaptability
+-   work ethic
+-   time management
 
 ## 🧰 Getting Started
 
@@ -51,7 +53,7 @@ Would like to run this project locally? Open terminal and follow these steps:
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/front-end-by-rimantas/40-grupe-portfolio.git
+    git clone https://github.com/front-end-by-rimantas/43-grupe-portfolio-ewebot
     ```
 2. Install NPM packages
     ```sh
@@ -70,14 +72,15 @@ Would like to run this project locally? Open terminal and follow these steps:
 
 There is no tests for this project.
 
-## 🎅 Authors
+## 🌞 Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+Rimantas: [Github](https://github.com/belauzas)\
+Nerijus: [Github](https://github.com/NerijusBun)\
+Aušra: [Github](https://github.com/AusraMundus)\
+Povilas: [Github](https://github.com/baubasdrsk)\
+Saulius: [Github](https://github.com/sauliuskarlinskas)\
+Karolis: [Github](https://github.com/karolis879)
 
 ## ⚠️ License
 
 Distributed under the MIT License. See LICENSE.txt for more information.
-
-## 🔗 Other resources
-
-https://randomuser.me/photos
