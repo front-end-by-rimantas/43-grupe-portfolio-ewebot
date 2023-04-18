@@ -14,6 +14,10 @@ Site published at: https://front-end-by-rimantas.github.io/43-grupe-portfolio-ew
 
 Design: [Ewebot](https://ewebotwp.com/home-10/?fbclid=IwAR38UbrKhivX_0eXkG06LaysYAbWk2MmGvuRnR7UY3jmK0GSQq-9PF7grYk)
 
+![Design](https://github.com/front-end-by-rimantas/43-grupe-portfolio-ewebot/blob/folder-setup/img/screenshots/ewebot-design.jpg)
+
+![Design](https://github.com/front-end-by-rimantas/43-grupe-portfolio-ewebot/blob/folder-setup/img/screenshots/ewebot-design-scroll.jpg)
+
 ## 🎯 Project features/goals
 
 -   Github pages
