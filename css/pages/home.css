@@ -30,6 +30,38 @@
 /* featured projects: end */
 
 /* why choose us 2: start */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+
+.service{
+    width:100%;
+}
+
+.service-icon-name-wrapper{
+    display:flex;
+    gap:5px;
+
+}
+.service-icon{
+    width:76px;
+}
+
+@media (min-width: 768px){
+    .service{
+        width:30%;
+    }
+
+    .services{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+}
+}
 /* why choose us 2: end */
 
 /* get free seo analysis?: start */
