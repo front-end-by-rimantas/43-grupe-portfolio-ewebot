@@ -3,9 +3,12 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 :root {
-    --violet: #3C3760;
-    --partners-colour: #CECCD6; 
-    --blue-light: #6657E0;
+    --dark-violet: #3C3760;
+    /* light grey mainly used in partners logos */
+    --partners-colour: #CECCD6;
+     /* button borders, carusel slide dots */
+    --violet: #6657E0;
+    /* secondary color */
     --orange: #F6722D;
     
     /* gradient red to orange */
@@ -17,6 +20,10 @@
     /* gradient white to blue */
     --white-blue-gradient: linear-gradient(96deg, #9085EA 0%,#7365E3 51%, #9289f1 100%);
   }
+
+  body, body * {
+    color:  var(--dark-violet);
+  }
   
   /* section name text */
   
@@ -27,13 +34,12 @@
     text-transform: uppercase;
   }
   
-  /*  Text between paragraph and section name */
+  /*  Text between paragraph and section name, main section header */
   
     .column-heading-text{
       font-family: 'Nunito', sans-serif;
       font-weight: 800;
       font-size: 30px;
-      color: var(--violet);
     }
 
   /* Column paragraph text */
@@ -41,7 +47,6 @@
   .column-paragraph-text {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
-    color: var(--violet);
   }
 
   /* Bigger paragraph text in 'Experience section' and 'Get free seo analysis' and so on... */
@@ -49,5 +54,4 @@
   .column-paragraph-bigger {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    color: var(--violet);
   }
