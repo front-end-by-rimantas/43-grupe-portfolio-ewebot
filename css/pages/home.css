@@ -12,9 +12,33 @@
 /* header: end */
 
 /* hero: start */
+
+.section-hero .hero-image img {
+    width: 100%;
+}
+
+.section-hero .phone-icon {
+    width: 30px;
+}
+.section-hero a {
+    text-decoration: none;
+}
 /* hero: end */
 
 /* partners: start */
+
+.section-partners .partner-logo-img {
+    height: 29px;
+    display: block;
+    margin: auto;
+
+    opacity: 1;
+    transition: .5s ease;
+}
+.section-partners .partner-logo-img:hover {
+    opacity: 0.5;
+  }
+  
 /* partners: end */
 
 /* why choose us: start */
