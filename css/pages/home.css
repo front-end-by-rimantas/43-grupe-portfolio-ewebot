@@ -9,6 +9,8 @@
 /* CUSTOM STYLE */
 
 /* header: start */
+@import '../components/header.css';
+
 /* header: end */
 
 /* hero: start */
