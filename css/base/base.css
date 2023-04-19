@@ -9,16 +9,13 @@
     --orange: #F6722D;
     
     /* gradient red to orange */
-    --red-gradient1: #FE5166;
-    --orange-gradient1: #FE9055;
+    --red-orange-gradient: linear-gradient(75deg,#FE5166,#FE9055 80%);
    
     /* gradient orange to red */
-    --orange-gradient2: #F2A64C;
-    --red-gradient2: #FF7042;
+    --orange-red-gradient: linear-gradient(96deg,#F2A64C 0%,#FF7042 51%);
    
     /* gradient white to blue */
-    --white-gradient: #9085EA;
-    --blue-gradient: #7365E3;
+    --white-blue-gradient: linear-gradient(96deg, #9085EA 0%,#7365E3 51%, #9289f1 100%);
   }
   
   /* section name text */
@@ -27,6 +24,7 @@
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     color: var(--violet);
+    text-transform: uppercase;
   }
   
   /*  Text between paragraph and section name */
@@ -43,6 +41,7 @@
   .column-paragraph-text {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
+    color: var(--violet);
   }
 
   /* Bigger paragraph text in 'Experience section' and 'Get free seo analysis' and so on... */
@@ -50,4 +49,5 @@
   .column-paragraph-bigger {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
+    color: var(--violet);
   }
