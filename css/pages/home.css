@@ -30,6 +30,10 @@
 /* featured projects: end */
 
 /* why choose us 2: start */
+.whyus2 .headers{
+    text-align: center;
+}
+
 .services{
     display: flex;
     flex-direction: column;
