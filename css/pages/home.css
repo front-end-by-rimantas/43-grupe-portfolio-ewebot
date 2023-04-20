@@ -39,6 +39,13 @@
 /* blog: end */
 
 /* got new project: start */
+    .got_new_project{
+        text-align: center;
+    }
+    .phone_nr{
+        display: block;
+        text-decoration: none;
+    }
 /* got new project: end */
 
 /* testimonials: start */
