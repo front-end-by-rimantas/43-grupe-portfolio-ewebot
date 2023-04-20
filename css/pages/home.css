@@ -81,14 +81,45 @@
 
 .services{
     display: flex;
+    gap:30px;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
     /* justify-content: space-between; */
 }
 
-.service{
+.service-wrapp{
     width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.service{
+    /* border: blue 1px solid; */
+    flex-grow: 1;
+    border-radius: 0.6em;
+    padding: 25px 15px;
+    /* margin: 35px 20px; */
+    box-shadow: rgba(10, 51, 80, 0.1) 13px 13px 51px 0px;
+    transition: color 2s;
+    transition: background-color 0.5s ease-out;
+}
+
+.service:hover{
+    background-color: var( --main-dark-color);
+}
+
+.service-icon-name-wrapper h4{
+    transition: color 0.5s ease-out;
+}
+
+.service p {
+    transition: color 0.5s ease-out;
+
+}   
+
+.service-wrapp .service:hover p, .service-wrapp .service:hover h4   {
+    color:white;
 }
 
 .service-icon-name-wrapper{
@@ -98,17 +129,66 @@
 }
 .service-icon{
     width:76px;
+    height: 71px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.service1{
+    background-image: url("../../img/why-choose-us2-services/home10_service1.png");
+}
+
+.service:hover .service1{
+    background-image: url("../../img/why-choose-us2-services/home10_service1-active.png");
+}
+
+.service2{
+    background-image: url("../../img/why-choose-us2-services/home10_service2.png");
+}
+.service:hover .service2{
+    background-image: url("../../img/why-choose-us2-services/home10_service2-active.png");
+}
+
+.service3{
+    background-image: url("../../img/why-choose-us2-services/home10_service3.png");
+}
+.service:hover .service3{
+    background-image: url("../../img/why-choose-us2-services/home10_service3-active.png");
+}
+
+.service4{
+    background-image: url("../../img/why-choose-us2-services/home10_service4.png");
+}
+.service:hover .service4{
+    background-image: url("../../img/why-choose-us2-services/home10_service4-active.png");
+}
+
+.service5{
+    background-image: url("../../img/why-choose-us2-services/home10_service5.png");
+}
+.service:hover .service5{
+    background-image: url("../../img/why-choose-us2-services/home10_service5-active.png");
+}
+
+.service6{
+    background-image: url("../../img/why-choose-us2-services/home10_service6.png");
+}
+.service:hover .service6{
+    background-image: url("../../img/why-choose-us2-services/home10_service6-active.png");
 }
 
 @media (min-width: 768px){
-    .service{
+    .service-wrapp{
         width:30%;
     }
 
     .services{
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
 }
 }
 /* why choose us 2: end */
