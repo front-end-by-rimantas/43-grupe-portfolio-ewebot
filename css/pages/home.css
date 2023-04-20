@@ -16,7 +16,7 @@
 /* hero: start */
 
 .section-hero .hero-image img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .section-hero .phone-icon {
@@ -28,19 +28,21 @@
 /* hero: end */
 
 /* partners: start */
+.section-partners .partner-logo-img img {
+    max-width: 100%;
+}
 
 .section-partners .partner-logo-img {
-    height: 29px;
     display: block;
-    margin: auto;
-
+    margin: 0 auto;
+    height: 45px;
+    padding: 18px 0;
     opacity: 1;
     transition: .5s ease;
 }
 .section-partners .partner-logo-img:hover {
     opacity: 0.5;
   }
-  
 /* partners: end */
 
 /* why choose us: start */
