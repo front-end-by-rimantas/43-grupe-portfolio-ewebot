@@ -52,6 +52,23 @@
 /* experiance: end */
 
 /* girl with phone: start */
+.girl-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.girl-text {
+    width: 100%;
+}
+
+@media(min-width:768px){
+    .girl-text {
+        width: 45%;
+    }
+}
 /* girl with phone: end */
 
 /* featured projects: start */
