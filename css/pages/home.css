@@ -170,8 +170,14 @@
         font-family: 'Rubik', sans-serif;
         padding-top: 10px;
         padding-bottom: 10px;
+        transition: 0.3s all;
     }
     
+    .footer-columns-text:hover{
+        color: gray;
+        transition: 0.3s all;
+    }
+
     .footer-img {
         width: 35px;
         object-fit: contain;
@@ -179,9 +185,8 @@
     }
     
     .footer-fonts {
-        gap: 10px;
+        gap: 20px;
         display: flex;
-        justify-content: space-between;
     }
     
     .social {
