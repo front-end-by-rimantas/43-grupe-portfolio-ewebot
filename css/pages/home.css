@@ -47,6 +47,20 @@
 /* why choose us: end */
 
 /* experiance: start */
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
+.progress-bar > .top {
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar > .progress {
+    height: 5px;
+    background-color: rgb(255, 173, 79);
+}
 /* experiance: end */
 
 /* girl with phone: start */
