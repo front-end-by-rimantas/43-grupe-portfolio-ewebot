@@ -4,13 +4,13 @@
 @import '../3rd-party/font-awesome.min.css';
 
 :root {
-    --dark-violet: #3C3760;
+    --main-dark-color: #3C3760;
     /* light grey mainly used in partners logos */
     --partners-colour: #CECCD6;
      /* button borders, carusel slide dots */
-    --violet: #6657E0;
+    --violet-elements: #6657E0;
     /* secondary color */
-    --orange: #F6722D;
+    --main-sub-color: #F6722D;
     
     /* gradient red to orange */
     --red-orange-gradient: linear-gradient(75deg,#FE5166,#FE9055 80%);
@@ -23,7 +23,7 @@
   }
 
   body, body * {
-    color:  var(--dark-violet);
+    color:  var(--main-dark-color);
   }
   
   /* section name text */
@@ -31,7 +31,6 @@
   .section-name {
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
-    color: var(--violet);
     text-transform: uppercase;
   }
   
