@@ -27,9 +27,11 @@
 .girl-wrap {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
     
 }
-.girl-wrap-text {
+.girl-text {
     width: 100%;
 }
 /* girl with phone: end */
