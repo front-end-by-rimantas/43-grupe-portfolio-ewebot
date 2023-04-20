@@ -24,6 +24,14 @@
 /* experiance: end */
 
 /* girl with phone: start */
+.girl-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.girl-wrap-text {
+    width: 100%;
+}
 /* girl with phone: end */
 
 /* featured projects: start */
