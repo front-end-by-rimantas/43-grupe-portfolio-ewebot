@@ -5,6 +5,7 @@
 /* 3rd-party */
 
 /* components */
+@import '../components/form.css';
 
 /* CUSTOM STYLE */
 
@@ -14,7 +15,6 @@
 /* header: end */
 
 /* hero: start */
-
 .section-hero .hero-image img {
     max-width: 100%;
 }
@@ -114,6 +114,9 @@
 /* why choose us 2: end */
 
 /* get free seo analysis?: start */
+.section-seo .seo-image img {
+    max-width: 100%;
+}
 /* get free seo analysis?: end */
 
 /* blog: start */
