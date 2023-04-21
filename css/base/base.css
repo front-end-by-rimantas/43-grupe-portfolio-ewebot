@@ -31,6 +31,7 @@
   .section-name {
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
   }
   
@@ -40,6 +41,9 @@
       font-family: 'Nunito', sans-serif;
       font-weight: 800;
       font-size: 30px;
+      text-transform: capitalize;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
   /* Column paragraph text */
@@ -54,6 +58,7 @@
   .column-paragraph-bigger {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
+    line-height: 25px;
   }
   
   html {
