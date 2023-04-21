@@ -60,15 +60,6 @@ dotai[2].addEventListener('click', function () {
     dotai[0].classList.remove("active");
    });
 
-// document.getElementsByClassName("dot").addEventListener('click', function handleClick(event) {
-//     // event.target.classList.add('bg-yellow');
-//     console.log('jeeee');
-//   });
-
-// // document.getElementsByClassName("dot").onclick = function() {
-// //     console.log("labas");
-// //   };
-// //   console.log("labas");
   
 /* testimonials: end */
 
