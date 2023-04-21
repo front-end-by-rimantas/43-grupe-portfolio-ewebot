@@ -1,0 +1,175 @@
+/* hero: button*/
+
+.btn-hero {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 23px;
+    color: #fff;
+    background-color: var(--main-dark-color);
+    padding: 5px 30px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.btn-hero:hover {
+    background-color: var(--main-sub-color);
+}
+
+/* why choose us: button*/
+/* experience: button*/
+
+.btn-why_choose_us,
+.btn-experience {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 23px;
+    color: var(--main-dark-color);
+    background-color: white;
+    padding: 13px 27px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--violet-elements);
+    user-select: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.btn-why_choose_us:hover,
+.btn-experience:hover {
+    background-color: var(--violet-elements);
+    color: white;
+}
+
+/* get free seo analysis?: button*/
+
+.btn-get_free_seo_analysis {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 23px;
+    color: white;
+    padding: 13px 27px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+
+    transition: background-image 0.5s ease; 
+    position: relative;
+    background-image: var(--orange-red-gradient);
+    z-index: 1;
+}
+
+.btn-get_free_seo_analysis::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    background-image: linear-gradient(276deg,#F2A64C,#FF7042 51%);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+.btn-get_free_seo_analysis:hover::before {
+    opacity: 1;
+  }
+
+/* got new project: button*/
+.btn-got_new_project {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 23px;
+    color: white;
+    padding: 13px 27px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+
+    transition: background-image 0.5s ease; 
+    position: relative;
+    background-image: var(--red-orange-gradient);
+    z-index: 1;
+}
+
+.btn-got_new_project::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    background-image: linear-gradient(255deg,#FE5166,#FE9055 80%);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+.btn-got_new_project:hover::before {
+    opacity: 1;
+  }
+
+/* footer: button*/
+
+.btn-footer {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 23px;
+    color: white;
+    padding: 13px 27px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+
+    transition: background-image 0.5s ease; 
+    position: relative;
+    background-image: var(--white-blue-gradient);
+    z-index: 1;
+}
+
+.btn-footer::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #a29ccd, #7365E3 3%, #8e88d5 100%);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+.btn-footer:hover::before {
+    opacity: 1;
+}
