@@ -271,49 +271,72 @@
         text-decoration: none;
     }
 
-    .balloon{
-        height:250px;
-        border-radius: 10px;
-        background-color:#FFF;
-        /* overflow: hidden; */
-        position: relative;
-        box-shadow: rgba(10, 51, 80, 0.1) 13px 13px 51px 0px;
-
-    }
-
-    .balloon::before{
-        content:"";
-        width: 0; 
-        height: 0; 
-        border-top: 50px solid transparent;
-        border-bottom: 50px solid transparent; 
-        
-        border-left:100px solid #FFF; 
-        position: absolute;
-        bottom:-30px;
-
-    }
-
-    .slides-navigation{
-        margin-top:30px;
-        margin-left: 30px;  
-        display:flex;
-        gap:30px;    
-    }
-
-    .dot{
-        width:12px;
-        height:12px;
-        border-radius: 50%;
-        background-color: var(--violet-elements);
-    }
+    
 
 /* got new project: end */
 
 /* testimonials: start */
+
 .testimonials {
     background-color: #F9FAFB;
 }
+
+.dots {
+    align-self: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .dots li {
+    margin-right: 6px;
+  }
+  .dots li:before {
+    content: '';
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: var(--violet-elements);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+  .dots li.active:before {
+    width: 30px;
+    background: var(--violet-elements);
+  }
+  
+
+  .balloon{
+    height:250px;
+    border-radius: 10px;
+    background-color:#FFF;
+    /* overflow: hidden; */
+    position: relative;
+    box-shadow: rgba(10, 51, 80, 0.1) 13px 13px 51px 0px;
+
+}
+
+.balloon::before{
+    content:"";
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+    
+    border-left:100px solid #FFF; 
+    position: absolute;
+    bottom:-30px;
+
+}
+
+.slides-navigation{
+    margin-top:30px;
+    margin-left: 30px;  
+    display:flex;
+    gap:30px;    
+}
+
 
 /* testimonials: end */
 

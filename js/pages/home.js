@@ -38,6 +38,38 @@
 /* got new project: end */
 
 /* testimonials: start */
+let dotai = document.getElementsByClassName("dot");
+
+
+dotai[0].addEventListener('click', function () {
+    dotai[0].classList.add("active");
+    dotai[1].classList.remove("active");
+    dotai[2].classList.remove("active");
+   });
+
+
+dotai[1].addEventListener('click', function () {
+    dotai[1].classList.add("active");
+    dotai[0].classList.remove("active");
+    dotai[2].classList.remove("active");
+   });
+
+dotai[2].addEventListener('click', function () {
+    dotai[2].classList.add("active");
+    dotai[1].classList.remove("active");
+    dotai[0].classList.remove("active");
+   });
+
+// document.getElementsByClassName("dot").addEventListener('click', function handleClick(event) {
+//     // event.target.classList.add('bg-yellow');
+//     console.log('jeeee');
+//   });
+
+// // document.getElementsByClassName("dot").onclick = function() {
+// //     console.log("labas");
+// //   };
+// //   console.log("labas");
+  
 /* testimonials: end */
 
 /* footer: start */
