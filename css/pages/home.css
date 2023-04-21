@@ -46,6 +46,52 @@
 /* partners: end */
 
 /* why choose us: start */
+
+.rectangle-zero {
+    margin: 0;
+    padding: 0;
+}
+
+
+.row > .left-column {
+    margin-top: 70px;
+}
+
+.rectangle-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: #252a3f;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 1.5em;
+    transition: 0.5s;
+}
+
+.rectangle-box {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 13px 13px 51px 0px rgba(10, 51, 80, 0.16);
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 20px;
+}
+
+.rectangle-box:hover {
+    background-color: var(--main-dark-color);
+    transition: 0.5s;
+    
+}
+
+.rectangle-box:hover > .rectangle-text {
+    color: white;
+    transition: 0.5s;
+}
+
+.rectangle-img {
+    width: 80px;
+    padding-bottom: 30px;
+}
+
 /* why choose us: end */
 
 /* experiance: start */
