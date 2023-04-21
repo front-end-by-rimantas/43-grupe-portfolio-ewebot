@@ -54,7 +54,7 @@
 
 
 .row > .left-column {
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 .rectangle-text {
@@ -73,7 +73,9 @@
     box-shadow: 13px 13px 51px 0px rgba(10, 51, 80, 0.16);
     border-radius: 10px;
     transition: 0.5s;
-    padding: 20px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 15px;
 }
 
 .rectangle-box:hover {
