@@ -1,8 +1,22 @@
 header.container {
-    margin:0;
+    margin-top:-10px;
     padding:0;
+    font-family: 'Rubik', sans-serif;
+    font-size:16px;
+    position:fixed;
+    background-color:rgba(255,255,255,0.95);
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
 
+header.container div{
+    margin: 0px;
+}
+
+header.container .row, header.container [class^="col"] {
+    margin-top:0;
+    margin-bottom:0;
+}
 
 .main-header{
     display: flex;
@@ -20,8 +34,13 @@ header.container {
 
 .main-nav{
     display: flex;
-    gap: 15px;
+    gap: 25px;
     justify-content: end;
+    margin-right:25px;
+}
+
+.main-nav-item.active {
+    color:var(--main-sub-color);
 }
 
 .logo img{
@@ -32,15 +51,99 @@ header.container {
     text-decoration:none;
 }
 
+
+.main-nav-item:hover{
+    color:var(--main-sub-color);
+}
+
+.with-submenu::after{
+    font-family: FontAwesome;
+    font-size:12px;
+    padding-left: 9px;
+    height:3px;
+    content: "\f078";
+
+}
+
+/* button pradzia galima sita stiliuka i buttonus panaudo */
+
+.header-button {
+    font-size: 10px;
+    border-radius: 0.7em;
+    color: white;
+    
+    text-transform: uppercase;
+    padding: 15px 24px;
+    font-weight: bold;
+    transition: background-image 0.9s ease-in-out;
+
+    position: relative;
+    background-image: var( --red-orange-gradient);
+    z-index: 1;
+
+
+}
+
+.header-button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0.7em;
+    background-image:linear-gradient(235deg,#FE5166,#FE9055 80%);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+
+}
+
+.header-button:hover::before {
+    opacity: 1;
+  }
+
+
+/* button galas galima sita stiliuka i buttonus panaudo */
+
+.header-search{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 15px;
+}
+
+
+.hamburger-wrapp{
+    cursor: pointer;
+    width: 28px;
+    height: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.hamburger-wrapp span {
+    display: block;
+    width:100%;
+    height:2px;
+    background-color: var(--main-dark-color);
+    transition: width 0.5s;
+}
+
+.header-desktop-hamburger:hover .second{
+    width:80%;
+}
+
+.header-desktop-hamburger:hover .third{
+    width:60%;
+}
+
 .mobile{
     display:inline-block;
 }
-.desktop{
-    display:none;
-}
-.tablet{
-    display:none;
-}
+
 
 .main-nav.mobiel{
     position: relative;
@@ -55,14 +158,39 @@ header.container {
     .mobile{
         display: none;
     }
-    .desktop{
-        display: inline-block;
-    }
 }
 
-@media (min-width: 768px){
-    .tablet{
-        display:inline-block;
+@media (max-width: 1200px){
+    .desktop{
+        display:none;
     }
 
+    .header-desktop-hamburger .first{
+        width:60%;
+        transform: rotate(135deg);
+    }
+
+    .header-desktop-hamburger .second{
+        visibility: hidden;
+        
+    }
+
+    .header-desktop-hamburger .third{
+        width:60%;
+        transform: rotate(45deg);
+    }
+
+    .tablet .hamburger-wrapp {
+        gap:0.25em;
+        justify-content: start;
+        align-items: start;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    .tablet{
+        display:none;
+    }
 }
