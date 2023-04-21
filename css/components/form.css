@@ -1,0 +1,25 @@
+.form label {
+    display: none;
+}
+
+/* get free seo analysis?: start */
+.section-seo .form > input,
+.section-seo .form > textarea {
+    width: 100%;
+}
+
+.section-seo .form > textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 50px;
+    height: 100px;
+    max-height: 200px;
+}
+
+@media (min-width: 768px) {
+    .section-seo .form > .input {
+        width: calc(50% - 15px);
+    }
+}
+
+/* get free seo analysis?: end */
