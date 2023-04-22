@@ -438,10 +438,11 @@
     /* animation-delay: 1s; */
 }
 
+
+
 .headers-wrapper.animation{
     animation-name: text-slide-up-appear;
-    animation-duration: 0.5s;
-    /* animation-delay: 1s; */
+    animation-duration: 1.5s;
 }
 
 @keyframes image-slide-up{
