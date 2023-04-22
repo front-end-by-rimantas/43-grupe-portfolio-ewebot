@@ -430,7 +430,7 @@
 
 @keyframes image-slide-up{
     0%{
-        transform: translate(70px, 200px);
+        transform: translate(70px, 70px);
         opacity:0;
     }
     100%{
