@@ -298,9 +298,9 @@
 
 /* Testimonial ballon and navigation */
     .balloon{
+        width:100%;
         border-radius: 10px;
         background-color:#FFF;
-        /* overflow: hidden; */
         position: relative;
         margin-left:50px;
         box-shadow: rgba(10, 51, 80, 0.1) 13px 13px 51px 0px;
@@ -320,16 +320,32 @@
         z-index: 0  ;
 
     }
-
-    /* .slides{
+   
+    .slides{
         position:absolute;
-    } */
+        overflow: hidden;
+        width:inherit;
+        /* transform: translate(-300px, 0); */
+    }
+
+    .slides-container{
+        display:flex;
+        gap:30px;
+        transition: all 1s;
+
+    }
+
+
+    .slide {
+        flex-shrink: 0;
+    
+    }
 
     .balloon-content{
         display: flex;
         align-items: flex-start;
         gap: 20px;
-        max-width: 100%;
+        max-width: 90%;
         max-height: 100%;
         padding: 20px;
         font-family: 'Rubik', sans-serif;
