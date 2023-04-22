@@ -20,9 +20,93 @@
     max-width: 100%;
 }
 
+.section-hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+
+.section-hero .hero-heading-text {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1em;
+}
+@media (min-width: 1200px) {
+    .section-hero .hero-heading-text {
+        font-size: 76px;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-hero .hero-content-margin {
+        margin: 50px 0;
+    }
+}
+@media (min-width: 1200px) {
+    .section-hero .hero-content-margin {
+        margin: 150px 0;
+    }
+}
+
+.section-hero .gradient-text {
+    background-color: #FF4969;
+    background-image: linear-gradient(75deg,#FF4969,#FC9D44 50%);
+    background-size: 100%;
+    background-clip: text;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-hero .column-paragraph-bigger {
+    line-height: 27px;
+    color: #696687;
+    margin: 30px 0;
+}
+
+/*** hero contacts ***/
+
+.section-hero .contact-margin-1 {
+    margin-left: 0;
+    margin-top: 38px;
+    margin-right: 25px;
+    margin-bottom: -10px;
+    padding: 0;
+}
+.section-hero .contact-margin-2 {
+    margin-left: 0;
+    padding: 0;
+}
+
 .section-hero .phone-icon {
     width: 30px;
 }
+
+.section-hero .hero-phone {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.section-hero .hero-phone:hover {
+    color: var(--main-sub-color);
+}
+
+.section-hero .hero-email {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.section-hero .hero-email:hover {
+    color: var(--main-sub-color);
+}
+
 .section-hero a {
     text-decoration: none;
 }

@@ -2,6 +2,43 @@
     display: none;
 }
 
+/* hero: start */
+
+.section-hero .hero-form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    box-shadow: 13px 13px 51px 0px #0a335029;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.section-hero .form > input {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;    
+    height: 50px;
+    padding-left: 20px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: auto;
+}
+.section-hero .form :focus-visible {
+    outline-color: transparent;
+}
+
+@media (min-width: 450px) {
+    .section-hero .hero-form {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    .section-hero .hero-form input {
+        width: 100%;
+    }
+}
+/* hero: end */
+
 /* get free seo analysis?: start */
 .section-seo .form > input,
 .section-seo .form > textarea {
