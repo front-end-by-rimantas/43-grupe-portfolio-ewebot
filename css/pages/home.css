@@ -24,13 +24,19 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding: 0;
 }
 
 .section-hero .hero-heading-text {
-    font-family: "arial", Sans-serif;
+    font-family: "Montserrat", Sans-serif;
     font-size: 50px;
     font-weight: 800;
-    line-height: 1.1em;
+    line-height: 1em;
+}
+@media (min-width: 992px) {
+    .section-hero .hero-heading-text {
+        font-size: 76px;
+    }
 }
 
 .section-hero .gradient-text {
@@ -49,19 +55,80 @@
     margin: 20px 0;
 }
 
+.section-hero .contact-margin-1 {
+    margin-left: 0;
+    margin-top: 35px;
+    margin-right: 45px;
+    margin-bottom: -10px;
+    padding: 0;
+}
+.section-hero .contact-margin-2 {
+    margin-left: 0;
+    padding: 0;
+}
+
+
 .section-hero .phone-icon {
     width: 30px;
+}
+
+.section-hero .hero-phone {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.section-hero .hero-phone:hover {
+    color: var(--main-sub-color);
+}
+
+.section-hero .hero-email {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.section-hero .hero-email:hover {
+    color: var(--main-sub-color);
 }
 
 .section-hero a {
     text-decoration: none;
 }
 
-@media (min-width: 992px) {
-    .section-hero .hero-heading-text {
-        font-size: 76px;
-    }
+
+
+
+
+/* hero: button*/
+
+.btn-hero {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 23px;
+    color: #fff;
+    background-color: var(--main-dark-color);
+    padding: 5px 30px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s ease;
 }
+.btn-hero:hover {
+    background-color: var(--main-sub-color);
+}
+
 /* hero: end */
 
 /* partners: start */
@@ -75,7 +142,7 @@
     height: 45px;
     padding: 18px 0;
     opacity: 1;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 .section-partners .partner-logo-img:hover {
     opacity: 0.5;
