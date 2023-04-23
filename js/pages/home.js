@@ -49,7 +49,7 @@
           document.getElementById("balloon").style.height = height;
       };
 
-      //iskvieciam funkcija 
+      //iskvieciam funkcija changeHeight() 
       window.addEventListener("resize", changeHeight);
       window.onresize = changeHeight();
 
@@ -73,6 +73,8 @@
         }
       };
 
+
+      //funkcija, kuri tikrina ar pakeitus ekrano dydi nereikia paskrlinti slido, kad visdar butu balloono veitoje
       function resize2(){
         let dotai2 = document.getElementsByClassName("dot");
         let nth = -1;
@@ -81,6 +83,7 @@
             nth = i;
             console.log(nth);
           }
+        };
 
           if (nth===0){
             document.getElementById("slides-container").style.transform = `translate(0px, 0px)`;
@@ -89,11 +92,8 @@
           } else if (nth===2){
             document.getElementById("slides-container").style.transform = `translate(-${slideWidth[0].offsetWidth+slideWidth[1].offsetWidth+70}px, 0px)`;
           }
-          
-        }
-
-      };
-
+     };
+      //iskvieciam funkcija, kad resizinus ekrane, pasikeistu ir skrollo vieta
       window.addEventListener("resize", resize2);
 
 
