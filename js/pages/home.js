@@ -23,6 +23,23 @@
 /* girl with phone: end */
 
 /* featured projects: start */
+    //taskiukai violetiniai po skaidrem kad elgtusi kaip reikia
+    
+      function dots3(n){
+        let dotai3 = document.getElementsByClassName("dot3");
+        for (let i of dotai3){
+          i.classList.remove("active");
+        };
+        dotai3[n].classList.add("active");
+
+        document.getElementById('slides-wrapper').className = 'slides-wrapper';
+        document.getElementById('slides-wrapper').classList.add(`slide${n}`)
+
+
+      };
+    
+      
+
 /* featured projects: end */
 
 /* why choose us 2: start */
