@@ -216,6 +216,7 @@
 
 .gradient-text {
     background: var(--red-orange-gradient);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
 }
@@ -536,6 +537,13 @@ background: var(--violet-elements);
 .section-seo .seo-image img {
     max-width: 100%;
 }
+
+.section-seo .column-paragraph-bigger {
+    line-height: 27px;
+    color: #696687;
+    margin-bottom: 25px;
+}
+
 /* get free seo analysis?: end */
 
 /* blog: start */
