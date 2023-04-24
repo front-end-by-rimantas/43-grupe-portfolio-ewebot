@@ -32,6 +32,7 @@
     min-width: 178px;
     box-sizing: border-box;
 }
+
 @media (min-width: 450px) {
     .section-hero .hero-form {
         flex-direction: row;
@@ -39,6 +40,19 @@
     }
     .section-hero .form input {
         width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-hero .hero-form {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .section-hero .hero-form {
+        flex-direction: row;
+        padding-bottom: 0;
     }
 }
 /* hero: end */
