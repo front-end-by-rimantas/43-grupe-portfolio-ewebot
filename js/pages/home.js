@@ -57,7 +57,7 @@
 /* testimonials: start */
         //balloon aukstis funkcija kad balloonas butu nemaziau negu betkurio slido auksciui
         function changeHeight(){
-          const slides = document.getElementsByClassName("slide");
+          const slides = document.getElementsByClassName("slide2");
           let heights = [];
           for (let i of slides){
               heights.push(parseInt(i.offsetHeight,10))
@@ -73,7 +73,7 @@
 
       //Scrolling slides navigation dots behavior 
       let dotai = document.getElementsByClassName("dot");
-      let slideWidth = document.getElementsByClassName("slide");
+      let slideWidth = document.getElementsByClassName("slide2");
 
       function dots(n){
         for (let i of dotai){
