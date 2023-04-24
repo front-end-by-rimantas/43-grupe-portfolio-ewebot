@@ -550,15 +550,85 @@ background: var(--violet-elements);
 /* blog: end */
 
 /* got new project: start */
-    .got_new_project{
-        text-align: center;
-    }
-    .phone_nr{
-        display: block;
-        text-decoration: none;
-    }
+.got_new_project {
+    text-align: center;
+}
 
-    
+.section-got-new-project .got-new-project-heading-text {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    padding-bottom: 70px;
+    position: relative;
+}
+.section-got-new-project .gradient-text {
+    background-color: #FF4969;
+    background-image: linear-gradient(75deg,#FF4969,#FC9D44 70%);
+    background-size: 100%;
+    background-clip: text;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* pseudo element */
+.section-got-new-project .got-new-project-heading-text::after {
+    content: '';
+    display: block;
+    text-align: center;
+    width: 81px;
+    height: 4px;
+    background-color: var(--main-sub-color);
+    margin: 35px 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-got-new-project .column-paragraph-bigger {
+    font-size: 20px;
+    line-height: 27px;
+    color: #696687;
+    margin-bottom: 0.3em;
+}
+
+.section-got-new-project .phone_nr {
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 30px;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.section-got-new-project .phone_nr:hover {
+    color: var(--violet-elements);
+}
+
+@media (min-width: 600px) {
+    .section-got-new-project .got-new-project-heading-text::after {
+        width: 112px;
+    }
+}
+@media (min-width: 760px) {
+    .section-got-new-project .got-new-project-heading-text::after {
+        width: 89px;
+    }
+}
+@media (min-width: 1020px) {
+    .section-got-new-project .got-new-project-heading-text::after {
+        width: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-got-new-project .phone_nr {
+        font-size: 36px;
+    }
+}
 
 /* got new project: end */
 
