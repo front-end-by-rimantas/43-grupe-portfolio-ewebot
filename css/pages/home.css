@@ -766,8 +766,11 @@ background: var(--violet-elements);
     flex-direction: column;
 }
 
-.footer-contacts {
+.footer-top > .footer-contacts {
     display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 .form-section {
