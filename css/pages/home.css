@@ -539,6 +539,9 @@ background: var(--violet-elements);
 /* get free seo analysis?: end */
 
 /* blog: start */
+.blog-text {
+    text-align: center;
+}
 /* blog: end */
 
 /* got new project: start */
