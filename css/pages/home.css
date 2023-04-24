@@ -795,6 +795,7 @@ background: var(--violet-elements);
     border-radius: 5px;
     margin-bottom: 10px;
     padding-left: 1em;
+    box-sizing: border-box;
 }
 
 .footer-columns {
@@ -933,7 +934,7 @@ background: var(--violet-elements);
 
 @media (max-width: 1024px){ 
     .input {
-        width: 99%;
+        width: 100%;
     }
 
     .footer-contacts {
@@ -959,8 +960,6 @@ background: var(--violet-elements);
     .btn-footer {
         padding-left: 60px;
         padding-right: 60px;
-        padding-top: 2px;
-        padding-bottom: 2px;
     }
 
     .footer-top {
