@@ -542,6 +542,12 @@ background: var(--violet-elements);
 .blog-title {
     text-align: center;
 }
+.blog-columns {
+    display: flex;
+    gap:30px;
+    flex-direction: row;    
+    justify-content: center;
+}
 /* blog: end */
 
 /* got new project: start */
