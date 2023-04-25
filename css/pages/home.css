@@ -143,6 +143,10 @@
 .rectangle-zero {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex-direction: row-reverse;
 }
 
 
@@ -162,13 +166,14 @@
 
 .rectangle-box {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 30%;
     flex-direction: column;
     box-shadow: 13px 13px 51px 0px rgba(10, 51, 80, 0.16);
     border-radius: 10px;
     transition: 0.5s;
-    padding-top: 15px;
-    padding-left: 30px;
-    padding-bottom: 15px;
+    padding: 20px 41px;
 }
 
 .rectangle-box:hover {
@@ -184,8 +189,35 @@
 
 .rectangle-img {
     width: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
+
+@media (max-width: 1200px) {
+    .rectangle-box {
+        padding: 20px 20px;
+        width: 35%;
+    }
+}
+
+@media (max-width: 991px) {
+    .rectangle-zero {
+        justify-content: space-between;
+    }   
+    .rectangle-box {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .rectangle-zero {
+        flex-direction: column;
+    }
+    .rectangle-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 
 /* why choose us: end */
 
