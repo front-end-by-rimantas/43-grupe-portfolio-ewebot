@@ -189,26 +189,29 @@
 /* why choose us: end */
 
 /* experiance: start */
-.col_img {
+.column_img {
     position: relative;
 }
 .img_cirkule {
     width: 100%;
 }
 .img_phone_screen {
-    position: absolute;
+    height: 30em;
+    position: absolute ;
     top: -3em;
     left: 1em;
 }
 .img_phone {
     position: absolute;
+    height: 35em;
     top: -5em;
     left: 5em;
 }
 .img_id_card {
     position: absolute;
-    top: 7em;
-    left: 20em;
+    height: 15em;
+    top: 6em;
+    left: 17em;
 }
 
 .label {
