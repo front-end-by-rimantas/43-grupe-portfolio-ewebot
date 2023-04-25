@@ -136,10 +136,6 @@
 
 /* back to top: button */
 .btn-back2top {
-    /* display: none; */
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
     font-size: 23px;
     font-family: FontAwesome;
     font-weight: 400;
@@ -157,11 +153,4 @@
 .btn-back2top:hover {
   background-color: var(--main-sub-color);
   color: white;
-}
-
-@media (min-width: 600px) {
-    .btn-back2top {
-        right: 40px;
-        bottom: 40px;
-    }
 }
