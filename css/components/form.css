@@ -7,17 +7,17 @@
 .section-hero .hero-form {
     display: flex;
     flex-direction: column;
-    width: 95%;
     box-shadow: 13px 13px 51px 0px #0a335029;
     border-radius: 5px;
     padding: 10px;
 }
 
 .section-hero .form > input {
+    width: 100%;
+    box-sizing: border-box;
     font-size: 14px;
     font-family: 'Rubik', sans-serif;    
-    height: 50px;
-    padding-left: 20px;
+    padding-left: 1em;
     background-color: #f7f7f7;
     border: none;
     border-radius: 5px;
@@ -28,13 +28,31 @@
     outline-color: transparent;
 }
 
+.section-hero .form > button {
+    min-width: 178px;
+    box-sizing: border-box;
+}
+
 @media (min-width: 450px) {
     .section-hero .hero-form {
         flex-direction: row;
         padding-bottom: 0;
     }
-    .section-hero .hero-form input {
+    .section-hero .form input {
         width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-hero .hero-form {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .section-hero .hero-form {
+        flex-direction: row;
+        padding-bottom: 0;
     }
 }
 /* hero: end */

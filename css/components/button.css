@@ -10,9 +10,8 @@
     line-height: 23px;
     color: #fff;
     background-color: var(--main-dark-color);
-    padding: 5px 30px;
+    padding: 13px 27px;
     height: 50px;
-    width: 100%;
     border-radius: 5px;
     border: none;
     user-select: none;
@@ -70,7 +69,6 @@
     border: none;
     user-select: none;
     cursor: pointer;
-
     transition: background-image 0.5s ease; 
     position: relative;
     background-image: var(--orange-red-gradient);
