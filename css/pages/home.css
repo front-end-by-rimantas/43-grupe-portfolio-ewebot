@@ -222,6 +222,29 @@
 /* why choose us: end */
 
 /* experiance: start */
+.column_img {
+    position: relative;
+}
+
+.main-img {
+    width:100%;
+}
+.img_phone_screen {
+    position: absolute ;
+    top: -3em;
+    left: 1em;
+}
+.img_phone {
+    position: absolute;
+    top: -5em;
+    left: 5em;
+}
+.img_id_card {
+    position: absolute;
+    top: 6em;
+    left: 17em;
+}
+
 .label {
     font-family: 'Rubik' , sans-serif;
     font-size: 18px;
@@ -230,6 +253,58 @@
 .value {
     font-family:'Rubik' , sans-serif;
     font-size: 16px;
+}
+
+.greenImg.animation{
+    animation-name: zaliasIn;
+    animation-duration: 2s;
+}
+
+.blueImg.animation{
+    animation-name: blueIn;
+    animation-duration: 2s;
+}
+
+.infoImg.animation{
+    animation-name: infoIn;
+    animation-duration: 2s;
+}
+
+@keyframes zaliasIn {
+    0%{
+        transform: translate(-300px, 0);
+        opacity: 0;
+    }
+
+    100% {
+        opacity:1;
+        transform: translate(0,0);
+    }
+}
+
+
+@keyframes blueIn {
+    0%{
+        transform: translate(0, 200px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity:1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes infoIn {
+    0%{
+        transform: translate(-20px, 0)  scale(0.2);
+        opacity: 0;
+    }
+
+    100% {
+        opacity:1;
+        transform: translate(0,0) scale(1);
+    }
 }
 /* experiance: end */
 

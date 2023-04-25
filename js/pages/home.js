@@ -1,5 +1,5 @@
 // IMPORTS
-
+import { imgPositioning, observer2 } from "../components/flyingphones.js";
 
 // FUNCTION EXECUTION
 
@@ -17,6 +17,22 @@
 /* why choose us: end */
 
 /* experiance: start */
+imgPositioning();
+window.addEventListener("resize", imgPositioning);
+
+//apearing animation
+
+
+// observer.observe(document.querySelector('.headers-wrapper'));
+observer2.observe(document.querySelector('.animated'));
+observer2.observe(document.querySelector('.animated2'));
+observer2.observe(document.querySelector('.animated3'));
+observer2.observe(document.querySelector('.animated4'));
+observer2.observe(document.querySelector('.animated5'));
+observer2.observe(document.querySelector('.animated6'));
+
+//apearing animation end
+
 /* experiance: end */
 
 /* girl with phone: start */
