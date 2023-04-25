@@ -571,7 +571,6 @@ background: var(--violet-elements);
 .blog-columns {
     border: solid 1px black;
     border-radius: 0.6em;
-    background-color: aqua;
     width: 100%;
 }
 
