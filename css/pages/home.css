@@ -3,6 +3,7 @@
 @import '../base/layout.css';
 
 /* 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
 
 /* components */
 @import '../components/form.css';
@@ -13,7 +14,9 @@
 
 /* header: start */
 @import '../components/header.css';
-
+html {
+    scroll-behavior: smooth;
+  }
 /* header: end */
 
 /* hero: start */
@@ -962,6 +965,23 @@ background: var(--violet-elements);
   
 
 /* testimonials: end */
+
+/* back to top: start */
+.btn-back2top {
+    display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+@media (min-width: 600px) {
+    .btn-back2top {
+        right: 40px;
+        bottom: 40px;
+    }
+}
+
+/* back to top: end */
+
 
 /* footer: start */
 .footer-top {
