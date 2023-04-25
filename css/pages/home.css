@@ -547,18 +547,50 @@ background: var(--violet-elements);
 .blog-columns-box {
     display: flex;
     gap:30px;
-    flex-direction: row;    
+    flex-direction: column;   
     justify-content: center;
+    
 }
+
+.blog-box-wrap {
+    padding: 40px;
+    
+}
+
+.blog-box-wrap h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;    
+}
+
+.blog-box-wrap p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+}
+
 
 .blog-columns {
     border: solid 1px black;
     border-radius: 0.6em;
     background-color: aqua;
+    width: 100%;
 }
 
 .blog-read-more {
-    padding: 82px 5px 0;
+    padding: 82px 0 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    
+}
+
+@media (min-width:768px) {
+    .blog-columns-box {
+        flex-direction: row;
+        
+    }
+
+    .blog-columns {
+        width: 33%;
+    }
 }
 
 /* blog: end */
