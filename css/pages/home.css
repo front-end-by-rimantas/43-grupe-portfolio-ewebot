@@ -270,6 +270,10 @@
 
 /* featured projects: start */
 
+.container.featured-projects {
+    padding-top:0;
+    padding-bottom: 0;
+}
 
 .featured-projects{
     overflow: hidden;
@@ -415,9 +419,15 @@ background: var(--violet-elements);
 /* featured projects: end */
 
 /* why choose us 2: start */
+.section.whyus2{
+    padding-top:0;
+    padding-bottom: 0;
+}
+
 .whyus2 .headers{
     text-align: center;
 }
+
 
 .services{
     display: flex;
@@ -438,11 +448,13 @@ background: var(--violet-elements);
     /* border: blue 1px solid; */
     flex-grow: 1;
     border-radius: 0.6em;
-    padding: 25px 15px;
+    padding: 45px 35px;
     /* margin: 35px 20px; */
     box-shadow: rgba(10, 51, 80, 0.1) 13px 13px 51px 0px;
     transition: color 2s;
     transition: background-color 0.5s ease-out;
+
+    
 }
 
 .service:hover{
@@ -455,6 +467,8 @@ background: var(--violet-elements);
 
 .service p {
     transition: color 0.5s ease-out;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
 
 }   
 
@@ -465,6 +479,10 @@ background: var(--violet-elements);
 .service-icon-name-wrapper{
     display:flex;
     gap:5px;
+    font-family: 'Nunito', sans-serif;
+    font-size:24px;
+    font-weight:700;
+    text-transform: uppercase;
 
 }
 .service-icon{
@@ -518,7 +536,7 @@ background: var(--violet-elements);
     background-image: url("../../img/why-choose-us2-services/home10_service6-active.png");
 }
 
-@media (min-width: 768px){
+@media (min-width: 1200px){
     .service-wrapp{
         width:30%;
     }
@@ -530,7 +548,9 @@ background: var(--violet-elements);
         align-items: center;
         justify-content: center;
 }
+
 }
+
 /* why choose us 2: end */
 
 /* get free seo analysis?: start */
@@ -633,6 +653,12 @@ background: var(--violet-elements);
 /* got new project: end */
 
 /* testimonials: start */
+
+.testimonials.container {
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
 
 .testimonials {
     background-color: #F9FAFB;
