@@ -18,7 +18,7 @@ function checkHeight(){
   } else {
     goTopBtn.style.display = "none"
   }
-}
+};
 
 goTopBtn.addEventListener('click', () => {
   window.scrollTo({
@@ -26,6 +26,7 @@ goTopBtn.addEventListener('click', () => {
     behavior: "smooth"
   })
 })
+
 /* back to top: end */
 
 /* hero: start */
