@@ -270,6 +270,10 @@
 
 /* featured projects: start */
 
+.container.featured-projects {
+    padding-top:0;
+    padding-bottom: 0;
+}
 
 .featured-projects{
     overflow: hidden;
@@ -415,6 +419,11 @@ background: var(--violet-elements);
 /* featured projects: end */
 
 /* why choose us 2: start */
+.section.whyus2{
+    padding-top:0;
+    padding-bottom: 0;
+}
+
 .whyus2 .headers{
     text-align: center;
 }
@@ -644,6 +653,12 @@ background: var(--violet-elements);
 /* got new project: end */
 
 /* testimonials: start */
+
+.testimonials.container {
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
 
 .testimonials {
     background-color: #F9FAFB;
