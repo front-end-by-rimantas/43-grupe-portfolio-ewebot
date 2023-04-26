@@ -177,6 +177,7 @@ html {
     border-radius: 10px;
     transition: 0.5s;
     padding: 20px 41px;
+    background-color: white;
 }
 
 .rectangle-box:hover {
