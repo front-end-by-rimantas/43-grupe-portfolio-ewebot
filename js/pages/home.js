@@ -58,6 +58,39 @@ observer2.observe(document.querySelector('.animated6'));
 /* experiance: end */
 
 /* girl with phone: start */
+observer2.observe(document.querySelector('.girl-animate'));
+
+observer2.observe(document.querySelector('.numeric')); 
+const objects = document.querySelectorAll('.numeric');
+const object1 = objects[0];
+let number1 = 0;
+
+const object2 = objects[1];
+let number2 = 0;
+
+const object3 = objects[2];
+let number3 = 0;
+
+const object4 = objects[3];
+let number4 = 0;
+
+const observer3 = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) {
+    setInterval(function(){ 
+      object1.innerText = number1 + 'm';
+      object2.innerText = number2 + '%';
+      object3.innerText = number3;
+      object4.innerText = number4 + '%';
+      number1 <= 310 ? number1 = number1 + 10 : '';
+      number2 <= 88 ? number2 = number2 + 1: '';
+      number3 <= 1320 ? number3 = number3 + 30: '';
+      number4 <= 92 ? number4 = number4 + 2: '';
+    }, 10);
+  }
+});
+
+observer3.observe(objects[0]);
+
 /* girl with phone: end */
 
 /* featured projects: start */
