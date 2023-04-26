@@ -22,8 +22,12 @@
     width: 50%;
     height: 100%;
     background-color:#F2A64C;
+}
+
+.progress-bar .bar.animation{
     animation: loading 3s;
 }
+
 @keyframes loading {
     0% {
         transform: translateX(-100%);

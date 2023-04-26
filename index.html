@@ -62,6 +62,12 @@
     </header>
 
     <main>
+        <!-- back to top: start -->
+        <div>
+            <button class="btn-back2top fa fa-angle-up" onclick="topFunction()" id="myBtn" title="Back to top"></button>
+        </div>
+        <!-- back to top: end -->
+        
         <!-- hero: start -->
         <section class="container section-hero">
             <div class="row">
@@ -116,48 +122,44 @@
         <!-- why choose us: start -->
         <section class="container">
             <div class="row">
-
-
-                <div class="col-12 col-lg-6 left-column">
+               <div class="col-12 col-lg-6 left-column">
                     <h5 class="section-name" >why choose us</h5>
                     <h2 class="column-heading-text">Boost Your Website Traffic!</h2>
                     <p class="column-paragraph-text">We are passionate about our work. Our designers stay ahead of the curve to provide engaging and user-friendly website designs to make your business stand out. Our developers are committed to maintaining the highest web standards so that your site will withstand the test of time. We care about your business, which is why we work with you.</p>
                     <a class="btn-why_choose_us" href="./">Discover more</a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 rectangle-zero ">
+                <div class="col-12 col-md-12 col-lg-6 rectangle-zero ">
                     <div class="rectangle-box">
                         <img class="rectangle-img" src="./img/why-choose-us1/orage.png" alt="orange">
                         <a class="rectangle-text" href="/">Discover, Explore the Product</a>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 rectangle-zero ">
                     <div class="rectangle-box">
                         <img class="rectangle-img" src="./img/why-choose-us1/green.png" alt="green">
                         <a class="rectangle-text" href="/">Product UX, Design & Development</a>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 rectangle-zero ">
                     <div class="rectangle-box">
                         <img class="rectangle-img" src="./img/why-choose-us1/cyan.png" alt="cyan">
                         <a class="rectangle-text" href="/">Art Direction & Brand Strategy</a>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 rectangle-zero ">
                     <div class="rectangle-box">
                         <img class="rectangle-img" src="./img/why-choose-us1/purple.png" alt="purple">
                         <a class="rectangle-text" href="/">Marketing Strategy & SEO Campaigns</a>
                     </div>
-
                 </div>
             </div>
         </section>
         <!-- why choose us -->
 
         <!-- experiance: start -->
-        <section class="container">
+        <section class="container experience">
             <div class="row">
-                <img class="col-12 col-md-6 " src="./img/experience/exp-main-image.jpeg" alt="Cirkule">
-                <div class="col-12 col-md-6 ">
+                    <div class="col-12 col-md-6 column_img" >
+                        <img class="main-img mainImg" id="main-img" src="./img/experience/exp-main-image.jpeg" alt="Cirkule">
+                        <img class="img_phone_screen greenImg animated" id="greenImg" src="./img/experience/exp-flying3.png" alt="phone screen">
+                        <img class="img_phone blueImg animated2" id="blueImg" src="./img/experience/exp-flying2.png" alt="Phone">
+                        <img class="img_id_card infoImg animated3" id="infoImg" src="./img/experience/exp-flying1.png" alt="id Card">
+                    </div>
+                <div class="col-12  col-md-6 col-lg-6">
                     <p class="section-name">Experience</p>
                     <h3 class="column-heading-text">Pay for qualified traffic</h3>
                     <p class="column-paragraph-bigger">Ewebot stays ahead of the curve with digital marketing trends. Our success has us leading the pack amongst our competitors with our ability to anticipate change
@@ -169,24 +171,24 @@
                             <div class="value">90%</div>
                         </div>
                         <div class="progress">
-                            <div class="bar" style="width: 90%;"></div>
+                            <div class="bar animated4" style="width: 90%;"></div>
                         </div>
                         <div class="top">
                             <div class="label">SEO Audit</div>
                             <div class="value">79%</div>
                         </div>
                         <div class="progress">
-                            <div class="bar" style="width: 79%;"></div>
+                            <div class="bar animated5" style="width: 79%;"></div>
                         </div>
                         <div class="top">
                             <div class="label">Optimization</div>
                             <div class="value">95%</div>
                         </div>
                         <div class="progress">
-                            <div class="bar" style="width: 95%;"></div>
+                            <div class="bar animated6" style="width: 95%;"></div>
                         </div>
                      </div>
-                     <a class="btn" href="#">Discover more</a>
+                     <a class="btn-experience" href="#">Discover more</a>
             </div>
         </section>
         <!-- experiance: end -->
@@ -640,7 +642,7 @@
             </div>
         </section>
     </footer>
-    <script type='module' src="./js/pages/home.js"></script>
+    <script type="module" src="./js/pages/home.js"></script>
 </body>
 
 </html>
