@@ -669,7 +669,7 @@ background: var(--violet-elements);
     max-width: 100%;
 }
 
-.seo-img {
+.seo-img.animation {
     animation: seoImgIn 2s;
 }
 

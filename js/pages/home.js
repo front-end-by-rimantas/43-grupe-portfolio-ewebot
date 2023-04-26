@@ -81,7 +81,10 @@ observer2.observe(document.querySelector('.animated6'));
 /* why choose us 2: end */
 
 /* get free seo analysis?: start */
-observer2.observe(document.querySelector('.seo-animate'));
+
+observer2.observe(document.getElementById('seo-img'));
+
+
 /* get free seo analysis?: end */
 
 /* blog: start */
