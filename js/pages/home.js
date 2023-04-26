@@ -54,7 +54,7 @@ import { carousel } from "../components/featured.js";
      
       function dotsScroll2(obj){
         let elem = obj.target;
-        slider(elem, 'testimonials', '.dot', '--testimonial-width')
+        slider(elem, 'testimonials', '.dot', '--testimonial-width');
       };
 
       let obj2 = document.querySelectorAll('.testimonials .dot');
@@ -62,7 +62,7 @@ import { carousel } from "../components/featured.js";
       o.addEventListener("click", dotsScroll2);
       }
 
-      changeHeight();
+      window.addEventListener("load", changeHeight);
       window.addEventListener("resize", changeHeight);
      
     
