@@ -318,12 +318,12 @@ html {
     box-shadow: 13px 13px 51px 0px rgba(10, 51, 80, 0.16);
 }
 
-.girl-rect-number {
+  .girl-rect-number {
+    font: 800 80px monospace;
     font-family: 'Nunito', sans-serif;
     font-size: 3em;
     font-weight: 700;
-    padding-bottom: 10px;
-}
+  }
 
 .gradient-text {
     background: var(--red-orange-gradient);
@@ -357,8 +357,16 @@ html {
     align-items: center;
 }
 
-.girl-img {
-    padding-top: 30px;
+.girlImage {
+    top: 2em;
+}
+
+.girl-img.animation {
+    animation: girlImgIn 2s;
+}
+
+.gwp {
+    overflow: hidden;
 }
 
 @media(min-width:768px){
@@ -376,6 +384,17 @@ html {
     .girl-rect-inside {
         padding: 40px;
     }
+}
+
+@keyframes girlImgIn {
+     0% {transform: translate(300px,0);
+        opacity: 0;
+     }
+
+     100% {
+        transform: translate(0,0);
+        opacity: 1;
+     }
 }
 /* girl with phone: end */
 
