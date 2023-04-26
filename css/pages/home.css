@@ -309,22 +309,6 @@
     transition: transform 0.4s;
 }
 
-.slides-wrapper.slide0{
-    transform: translate(calc(((var(--slide-width) + 10px) * 4 + (var(--slide-width) / 2) ) * -1  + 50vw), 0px);
-}
-
-
-.slides-wrapper.slide1{
-    transform: translate(calc(((var(--slide-width) + 10px) * 5 + (var(--slide-width) / 2) ) * -1  + 50vw), 0px);
-}
-
-.slides-wrapper.slide2{
-    transform: translate(calc(((var(--slide-width) + 10px) * 6 + (var(--slide-width) / 2) ) * -1  + 50vw), 0px);
-}
-
-.slides-wrapper.slide3{
-    transform: translate(calc(((var(--slide-width) + 10px) * 7 + (var(--slide-width) / 2) ) * -1  + 50vw), 0px);
-}
 
 .featured-projects .slide{
     width:var(--slide-width);

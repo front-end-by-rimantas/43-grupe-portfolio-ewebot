@@ -23,19 +23,32 @@
 /* girl with phone: end */
 
 /* featured projects: start */
+
     //taskiukai violetiniai po skaidrem kad elgtusi kaip reikia
     
-      function dots3(n){
-        let dotai3 = document.getElementsByClassName("dot3");
+      function dots3(elem, n){
+
+        let sekcija = document.getElementById(n);
+        let dotai3 = sekcija.querySelectorAll('.dot3');
         for (let i of dotai3){
           i.classList.remove("active");
         };
-        dotai3[n].classList.add("active");
+        elem.classList.add("active");
 
-        document.getElementById('slides-wrapper').className = 'slides-wrapper';
-        document.getElementById('slides-wrapper').classList.add(`slide${n}`)
+        let siblingsCount = sekcija.querySelectorAll('.dot3').length;
+        let nextSiblingsCount = 0;
+        let index = 0;
+        let nextSibling = elem.nextElementSibling;
+        while(nextSibling) {
+          nextSiblingsCount++;
+          nextSibling = nextSibling.nextElementSibling;
+        }
+        index = siblingsCount - nextSiblingsCount - 1
 
-
+        let viewportWidth = window.innerWidth;
+        const slideWidth = sekcija.querySelector('.slide').offsetWidth;
+        const x = ((slideWidth + 10) * (4 + index) + (slideWidth / 2)) * (-1) + (viewportWidth / 2);
+        document.getElementById('slides-wrapper').style.transform = 'translateX(' + x + 'px)';   
       };
     
       
