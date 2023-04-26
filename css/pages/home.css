@@ -670,8 +670,23 @@ background: var(--violet-elements);
 /* why choose us 2: end */
 
 /* get free seo analysis?: start */
-.section-seo .seo-image img {
+.seo-img{
     max-width: 100%;
+}
+
+.seo-img.animation {
+    animation: seoImgIn 2s;
+}
+
+@keyframes seoImgIn {
+    0% {transform: translate(-300px,0);
+       opacity: 0;
+    }
+
+    100% {
+       transform: translate(0,0);
+       opacity: 1;
+    }
 }
 
 .section-seo .column-paragraph-bigger {
