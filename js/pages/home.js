@@ -3,7 +3,7 @@
 
 import { changeHeight, observer, slider } from "../components/testimonials.js";
 import { carousel } from "../components/featured.js";
-import { imgPositioning, observer2 } from "../components/flyingphones.js";
+import { imgPositioning, observer2, heroFlyingElements } from "../components/flyingphones.js";
 
 // FUNCTION EXECUTION
 
@@ -34,6 +34,8 @@ goTopBtn.addEventListener('click', () => {
 /* back to top: end */
 
 /* hero: start */
+heroFlyingElements();
+window.addEventListener("resize", heroFlyingElements);
 /* hero: end */
 
 /* partners: start */
