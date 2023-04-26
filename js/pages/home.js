@@ -36,6 +36,23 @@ goTopBtn.addEventListener('click', () => {
 /* hero: start */
 /* hero: end */
 
+const textai = document.getElementById('typingText').innerText;
+const zodziai = textai.split(',');
+
+console.log(zodziai);
+int1 = setInterval(test, 90);
+
+const xxx = document.getElementById('typingText');
+let zodis1 = zodziai[0];
+
+function test() {
+  xxx.innerText = zodis1;
+  zodis1 = zodis1.slice(0,-1); 
+  zodis1.lenght === 0 ? clearInterval(int1):'';
+}
+
+
+
 /* partners: start */
 /* partners: end */
 

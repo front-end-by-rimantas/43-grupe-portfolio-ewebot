@@ -65,48 +65,6 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
-/*** animated h1 ***/
-.text-1 {
-    animation: text1;
-}
-.text-2 {
-    animation: text2;
-}
-
-.text-1,
-.text-2 {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    animation-duration: 10s;
-    animation-timing-function: steps(30, end);
-    animation-iteration-count: infinite;
-}
-
-@keyframes text2 {
-    0%,
-    50%,
-    100% {
-      width: 0;
-    }
-    60%,
-    90% {
-      width: 3.5em;
-    }
-  }
-@keyframes text1 {
-    0%,
-    50%,
-    100% {
-      width: 0;
-    }
-    10%,
-    40% {
-      width: 3.5em;
-    }
-}
-
-
 .section-hero .column-paragraph-bigger {
     line-height: 27px;
     color: #696687;
