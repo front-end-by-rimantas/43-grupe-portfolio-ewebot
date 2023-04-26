@@ -1,12 +1,34 @@
 // IMPORTS
 
+
 import { changeHeight, observer, slider } from "../components/testimonials.js";
 import { carousel } from "../components/featured.js";
+import { imgPositioning, observer2 } from "../components/flyingphones.js";
+
 // FUNCTION EXECUTION
 
 
 /* header: start */
 /* header: end */
+
+/* back to top: start */
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+/* back to top: end */
 
 /* hero: start */
 /* hero: end */
@@ -18,6 +40,22 @@ import { carousel } from "../components/featured.js";
 /* why choose us: end */
 
 /* experiance: start */
+imgPositioning();
+window.addEventListener("resize", imgPositioning);
+
+//apearing animation
+
+
+// observer.observe(document.querySelector('.headers-wrapper'));
+observer2.observe(document.querySelector('.animated'));
+observer2.observe(document.querySelector('.animated2'));
+observer2.observe(document.querySelector('.animated3'));
+observer2.observe(document.querySelector('.animated4'));
+observer2.observe(document.querySelector('.animated5'));
+observer2.observe(document.querySelector('.animated6'));
+
+//apearing animation end
+
 /* experiance: end */
 
 /* girl with phone: start */
@@ -75,6 +113,8 @@ import { carousel } from "../components/featured.js";
 
   
 /* testimonials: end */
+
+
 
 /* footer: start */
 /* footer: end */

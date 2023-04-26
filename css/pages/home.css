@@ -3,6 +3,7 @@
 @import '../base/layout.css';
 
 /* 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
 
 /* components */
 @import '../components/form.css';
@@ -13,7 +14,9 @@
 
 /* header: start */
 @import '../components/header.css';
-
+html {
+    scroll-behavior: smooth;
+  }
 /* header: end */
 
 /* hero: start */
@@ -143,6 +146,10 @@
 .rectangle-zero {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex-direction: row-reverse;
 }
 
 
@@ -162,13 +169,14 @@
 
 .rectangle-box {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 30%;
     flex-direction: column;
     box-shadow: 13px 13px 51px 0px rgba(10, 51, 80, 0.16);
     border-radius: 10px;
     transition: 0.5s;
-    padding-top: 15px;
-    padding-left: 30px;
-    padding-bottom: 15px;
+    padding: 20px 41px;
 }
 
 .rectangle-box:hover {
@@ -184,12 +192,62 @@
 
 .rectangle-img {
     width: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
+
+@media (max-width: 1200px) {
+    .rectangle-box {
+        padding: 20px 20px;
+        width: 35%;
+    }
+}
+
+@media (max-width: 991px) {
+    .rectangle-zero {
+        justify-content: space-between;
+    }   
+    .rectangle-box {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .rectangle-zero {
+        flex-direction: column;
+    }
+    .rectangle-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 
 /* why choose us: end */
 
 /* experiance: start */
+.column_img {
+    position: relative;
+}
+
+.main-img {
+    width:100%;
+}
+.img_phone_screen {
+    position: absolute ;
+    top: -3em;
+    left: 1em;
+}
+.img_phone {
+    position: absolute;
+    top: -5em;
+    left: 5em;
+}
+.img_id_card {
+    position: absolute;
+    top: 6em;
+    left: 17em;
+}
+
 .label {
     font-family: 'Rubik' , sans-serif;
     font-size: 18px;
@@ -198,6 +256,58 @@
 .value {
     font-family:'Rubik' , sans-serif;
     font-size: 16px;
+}
+
+.greenImg.animation{
+    animation-name: zaliasIn;
+    animation-duration: 2s;
+}
+
+.blueImg.animation{
+    animation-name: blueIn;
+    animation-duration: 2s;
+}
+
+.infoImg.animation{
+    animation-name: infoIn;
+    animation-duration: 2s;
+}
+
+@keyframes zaliasIn {
+    0%{
+        transform: translate(-300px, 0);
+        opacity: 0;
+    }
+
+    100% {
+        opacity:1;
+        transform: translate(0,0);
+    }
+}
+
+
+@keyframes blueIn {
+    0%{
+        transform: translate(0, 200px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity:1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes infoIn {
+    0%{
+        transform: translate(-20px, 0)  scale(0.2);
+        opacity: 0;
+    }
+
+    100% {
+        opacity:1;
+        transform: translate(0,0) scale(1);
+    }
 }
 /* experiance: end */
 
@@ -848,6 +958,23 @@ background: var(--violet-elements);
   
 
 /* testimonials: end */
+
+/* back to top: start */
+.btn-back2top {
+    display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+@media (min-width: 600px) {
+    .btn-back2top {
+        right: 40px;
+        bottom: 40px;
+    }
+}
+
+/* back to top: end */
+
 
 /* footer: start */
 .footer-top {
