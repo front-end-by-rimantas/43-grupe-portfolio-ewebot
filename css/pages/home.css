@@ -38,6 +38,32 @@ html {
     font-weight: 900;
     line-height: 1em;
 }
+
+.hero-image-wraper {
+    position: relative;
+}
+
+.flying1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.flying2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.flying3{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.flying4{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 @media (min-width: 1200px) {
     .section-hero .hero-heading-text {
         font-size: 76px;
@@ -69,6 +95,63 @@ html {
     line-height: 27px;
     color: #696687;
     margin: 25px 0;
+}
+
+.flying1{
+    animation: flyingImage1 1.5s;
+}
+.flying2{
+    animation: flyingImage2 1.5s;
+}
+.flying3{
+    animation: flyingImage3 1.5s;
+}
+.flying4{
+    animation: flyingImage4 1.5s;
+}
+
+@keyframes flyingImage1 {
+    0% {
+        transform: translate(-50px, -10px) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes flyingImage2 {
+    0% {
+        transform: translate(-300px, 0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes flyingImage3 {
+    0% {
+        transform: translate(0px, -200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes flyingImage4 {
+    0% {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
 }
 
 /*** hero contacts ***/
