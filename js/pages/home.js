@@ -8,22 +8,25 @@ import { imgPositioning, observer2 } from "../components/flyingphones.js";
 /* header: end */
 
 /* back to top: start */
-let mybutton = document.getElementById("myBtn");
+const goTopBtn = document.querySelector('.btn-back2top');
 
-window.onscroll = function() {scrollFunction()};
+window.addEventListener('scroll', checkHeight)
 
-function scrollFunction() {
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-    mybutton.style.display = "block";
+function checkHeight(){
+  if(window.scrollY > 1000) {
+    goTopBtn.style.display = "flex"
   } else {
-    mybutton.style.display = "none";
+    goTopBtn.style.display = "none"
   }
-}
+};
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+goTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+})
+
 /* back to top: end */
 
 /* hero: start */
