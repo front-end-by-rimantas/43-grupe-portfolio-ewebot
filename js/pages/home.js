@@ -25,11 +25,15 @@
 /* featured projects: start */
 
     //taskiukai violetiniai po skaidrem kad elgtusi kaip reikia
+      function testas(obj){
+        let elem = obj.target;
+        dots3(elem, 'featured-projects')
+      };
     
-      function dots3(elem, n){
-
+      function dots3(elem,n){
         let sekcija = document.getElementById(n);
         let dotai3 = sekcija.querySelectorAll('.dot3');
+        // let elem = this;
         for (let i of dotai3){
           i.classList.remove("active");
         };
@@ -50,8 +54,10 @@
         const x = ((slideWidth + 10) * (4 + index) + (slideWidth / 2)) * (-1) + (viewportWidth / 2);
         document.getElementById('slides-wrapper').style.transform = 'translateX(' + x + 'px)';   
       };
-    
-      
+      let obj = document.querySelectorAll('.dot3');
+      for (let o of obj){
+      o.addEventListener("click", testas);
+    }
 
 /* featured projects: end */
 
