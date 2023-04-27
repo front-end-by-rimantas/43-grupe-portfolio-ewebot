@@ -346,6 +346,10 @@ html {
 .value {
     font-family:'Rubik' , sans-serif;
     font-size: 16px;
+    margin-right: 20px;
+}
+.value-sm {
+margin-right: 60px;
 }
 
 .greenImg.animation{

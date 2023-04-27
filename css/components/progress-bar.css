@@ -36,3 +36,14 @@
         transform: translateX(0);
     }
 }
+.value {
+    animation: load 3s;
+}
+@keyframes load {
+    0% {
+        transform: translateX(-1500%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
