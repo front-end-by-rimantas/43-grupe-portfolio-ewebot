@@ -576,6 +576,7 @@ background: var(--violet-elements);
 
 .blog-container-flex {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     padding: 82px 0 0;
     font-family: 'Nunito', sans-serif;
@@ -588,7 +589,7 @@ background: var(--violet-elements);
     justify-content: flex-end;
     overflow: hidden;
     transition: width 0.5s;
-    width: 20px;
+    width: 17px;
     gap: 10px;
 }
 
@@ -608,6 +609,16 @@ background: var(--violet-elements);
 
     .blog-columns {
         width: 33%;
+    }
+
+    .blog-container-flex {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:992px) {
+    .blog-container-flex {
+        flex-direction: row;
     }
 }
 
