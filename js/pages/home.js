@@ -199,8 +199,8 @@ observer2.observe(document.getElementById('seo-img'));
 
     // Tikrinam kai stebimi objektai ivaziuoja i ekrana, prasideda ju animacija  
     
-        observer.observe(document.querySelector('.animated'));
-        observer.observe(document.querySelector('.animated2'));
+        observer.observe(document.querySelector('.testimonials .animated'));
+        observer.observe(document.querySelector('.testimonials .animated2'));
     //apearing animation end
 
   
