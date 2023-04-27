@@ -106,15 +106,20 @@ observer2.observe(document.querySelector('.animated'));
 observer2.observe(document.querySelector('.animated2'));
 observer2.observe(document.querySelector('.animated3'));
 observer2.observe(document.querySelector('.animated4'));
+observer2.observe(document.querySelector('.animated4-2'));
+
 observer2.observe(document.querySelector('.animated5'));
+observer2.observe(document.querySelector('.animated5-2'));
+
 observer2.observe(document.querySelector('.animated6'));
+observer2.observe(document.querySelector('.animated6-2'));
 
 //apearing animation end
 
 /* experiance: end */
 
 /* girl with phone: start */
-observer2.observe(document.querySelector('.girl-animate'));
+// observer2.observe(document.querySelector('.girl-animate'));
 
 observer2.observe(document.querySelector('.numeric')); 
 const objects = document.querySelectorAll('.numeric');
