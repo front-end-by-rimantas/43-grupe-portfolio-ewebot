@@ -1,3 +1,9 @@
+.experience {
+    --bar1: 90;
+    --bar2: 79;
+    --bar3: 95;
+}
+
 .progress-bar {
     display: flex;
     flex-direction: column;
@@ -15,24 +21,81 @@
     height: 5px;
     border-radius: 3px;
     background-color: #E6E6E7;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-bottom: 15px;
+    position: relative;
 }
-.progress-bar > .progress > .bar {
-    width: 50%;
-    height: 100%;
+.progress-bar  .progress  .bar {
+    width: 100%;
+    height: 5px;
     background-color:#F2A64C;
+    position: absolute;
+    top:0px;
 }
 
-.progress-bar .bar.animation{
-    animation: loading 3s;
+.progress1 .bar, .progress1 .value {
+    left: calc(((100 - var(--bar1)) * -1) * 1%);
 }
 
-@keyframes loading {
+.progress2 .bar, .progress2 .value {
+    left: calc(((100 - var(--bar2)) * -1) * 1%);
+}
+
+.progress3 .bar, .progress3 .value {
+    left: calc(((100 - var(--bar3)) * -1) * 1%);
+}
+
+.bar-hidde {
+    position: relative;
+    height:5px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.progress1 .bar.animation, .progress1 .value.animation {
+    animation: loading1 3s;
+}
+
+.progress2 .bar.animation, .progress2 .value.animation {
+    animation: loading2 3s;
+}
+
+.progress3 .bar.animation, .progress3 .value.animation {
+    animation: loading3 3s;
+}
+
+
+.experience .value {
+    text-align: right;
+    position: absolute;
+    width:100%;
+    bottom: 17px;
+}
+
+@keyframes loading1 {
     0% {
-        transform: translateX(-100%);
+        left: -100%;
     }
     100% {
-        transform: translateX(0);
+        left: calc(((100 - var(--bar1)) * -1) * 1%);
     }
 }
+
+@keyframes loading2 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: calc(((100 - var(--bar2)) * -1) * 1%);
+    }
+}
+
+@keyframes loading3 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: calc(((100 - var(--bar3)) * -1) * 1%);
+    }
+}
+
