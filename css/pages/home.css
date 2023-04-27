@@ -585,7 +585,15 @@ background: var(--violet-elements);
 
 .icons {
     display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: width 0.5s;
+    width: 20px;
     gap: 10px;
+}
+
+.icons:hover {
+    width: 112px;
 }
 
 .icons .icon {
