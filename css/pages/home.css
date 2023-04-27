@@ -574,11 +574,13 @@ background: var(--violet-elements);
     width: 100%;
 }
 
-.blog-read-more {
+.blog-container-flex {
+    display: flex;
+    justify-content: space-between;
     padding: 82px 0 0;
     font-family: 'Nunito', sans-serif;
+    align-items: center;
     font-size: 12px;
-    
 }
 
 @media (min-width:768px) {
