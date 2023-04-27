@@ -3,7 +3,7 @@
 
 import { changeHeight, observer, slider } from "../components/testimonials.js";
 import { carousel } from "../components/featured.js";
-import { imgPositioning, observer2 } from "../components/flyingphones.js";
+import { imgPositioning, observer2, heroFlyingElements } from "../components/flyingphones.js";
 
 // FUNCTION EXECUTION
 
@@ -34,6 +34,8 @@ goTopBtn.addEventListener('click', () => {
 /* back to top: end */
 
 /* hero: start */
+heroFlyingElements();
+window.addEventListener("resize", heroFlyingElements);
 /* hero: end */
 
 const textDisplay = document.getElementById('typingText') // elementas kuriame atvaizduosime einamaja fraze
@@ -166,6 +168,10 @@ observer3.observe(objects[0]);
 /* why choose us 2: end */
 
 /* get free seo analysis?: start */
+
+observer2.observe(document.getElementById('seo-img'));
+
+
 /* get free seo analysis?: end */
 
 /* blog: start */
