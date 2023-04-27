@@ -20,6 +20,10 @@ html {
 /* header: end */
 
 /* hero: start */
+.section-hero {
+    position: relative;
+}
+
 .section-hero .hero-image img {
     max-width: 100%;
 }
@@ -203,6 +207,115 @@ html {
 
 .section-hero a {
     text-decoration: none;
+}
+
+
+.triangle-img-left {
+    width: 36px;
+    position: absolute;
+    top: 570px;
+    left: 0px;
+    animation-name: floating;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.triangle-img-right {
+    width: 36px;
+    position: absolute;
+    top: 200px;
+    right: 70px;
+    animation-name: floating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.x-large-img-left {
+    width: 21px;
+    position: absolute;
+    left: 00px;
+    top: 100px;
+    animation-name: floating;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.x-large-img-right {
+    width: 21px;
+    position: absolute;
+    top: 600px;
+    right: 30px;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.x-small-img-left {
+    width: 13px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    animation-name: floating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.x-small-img-left2 {
+    width: 13px;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    animation-name: floating;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.x-small-img-right {
+    width: 13px;
+    position: absolute;
+    top: 450px;
+    right: 50px;
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+   
+}
+
+.circle-img-right {
+    width: 24px;
+    position: absolute;
+    top: 335px;
+    right: 50px;
+    animation-name: floating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(20px, 15px) rotate(40deg); }
+    100%   { transform: translate(0, -0px); }   
 }
 /* hero: end */
 
