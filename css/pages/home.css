@@ -213,10 +213,10 @@ html {
 .triangle-img-left {
     width: 36px;
     position: absolute;
-    top: 470px;
-    left: -200px;
+    top: 570px;
+    left: 0px;
     animation-name: floating;
-    animation-duration: 3s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 30px;
@@ -225,8 +225,8 @@ html {
 .triangle-img-right {
     width: 36px;
     position: absolute;
-    top: 270px;
-    left: 1330px;
+    top: 200px;
+    right: 70px;
     animation-name: floating;
     animation-duration: 8s;
     animation-iteration-count: infinite;
@@ -238,8 +238,8 @@ html {
 .x-large-img-left {
     width: 21px;
     position: absolute;
-    left: -160px;
-    top: 200px;
+    left: 00px;
+    top: 100px;
     animation-name: floating;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -251,7 +251,7 @@ html {
     width: 21px;
     position: absolute;
     top: 600px;
-    left: 1350px;
+    right: 30px;
     animation-name: floating;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -264,9 +264,9 @@ html {
     width: 13px;
     position: absolute;
     top: 300px;
-    left: -250px;
+    left: 20px;
     animation-name: floating;
-    animation-duration: 3s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 30px;
@@ -275,8 +275,8 @@ html {
 .x-small-img-left2 {
     width: 13px;
     position: absolute;
-    top: 68px;
-    left: 550px;
+    top: 20px;
+    right: 150px;
     animation-name: floating;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -288,8 +288,8 @@ html {
 .x-small-img-right {
     width: 13px;
     position: absolute;
-    top: 400px;
-    left: 1350px;
+    top: 450px;
+    right: 50px;
     animation-name: floating;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -303,7 +303,7 @@ html {
     width: 24px;
     position: absolute;
     top: 335px;
-    left: 1750px;
+    right: 50px;
     animation-name: floating;
     animation-duration: 8s;
     animation-iteration-count: infinite;
