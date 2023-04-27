@@ -792,6 +792,7 @@ background: var(--violet-elements);
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .blog-bg-image {
@@ -805,6 +806,10 @@ background: var(--violet-elements);
 }
 .blog-bg-image:hover {
     transform: scale(1.2);
+}
+
+.bg-img-text {
+    /* position: absolute;;*/
 }
 
 .blog-title {
