@@ -788,6 +788,15 @@ background: var(--violet-elements);
 
 /* blog: start */
 
+.blog-bg-image {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-position: 50%;
+}
+
 .blog-title {
     text-align: center;
 }
