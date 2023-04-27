@@ -38,6 +38,56 @@ heroFlyingElements();
 window.addEventListener("resize", heroFlyingElements);
 /* hero: end */
 
+const textDisplay = document.getElementById('typingText') // elementas kuriame atvaizduosime einamaja fraze
+const phrases = ['Success', 'Business', 'Services'] // zodziai kuriuos reikia spausdinti
+let i = 0  //zodziu sarase indexas
+let j = 0  // raidziu zodyje indeksas
+let currentPhrase = [] //einamuoju metu sirinkta zodzio dalis
+let isDeleting = false //ar reikia trinti ar spausdinti
+let isEnd = false //ar pasibaige ziodzio raides ar ne
+
+function loop () {  //pagrindine funkcija, kuri su setTimeout suksis pasikartodama su tam tikra pauze
+  isEnd = false; //pasitikrinam ar nempasiekem zodzio galo
+  textDisplay.innerHTML = currentPhrase.join(''); //atspausdinam einamaja fraze DOM elemente
+
+  if (i < phrases.length) {  //patikrinam ar nesibaige zodziai sarase
+
+    if (!isDeleting && j <= phrases[i].length) { //jeigu siu metu nereikia trinti (reiskais reikai spausdinti, ir jeigu j indexas nevirsija zodzio ilgio)
+      currentPhrase.push(phrases[i][j]);         //tada idedam i einamaja fraze sekancia zodzio raide
+      j++;
+      textDisplay.innerHTML = currentPhrase.join(''); //vel atrspausdinam i DOM
+    };
+
+    if(isDeleting ) {  //jeigu reikai trinti, trinam viena raide
+      currentPhrase.pop(phrases[i][j]); //nutrinam viena raide
+      j--; //raidziu indeksa sumazinam
+      textDisplay.innerHTML = currentPhrase.join(''); //vel atspausdinam
+    };
+
+    if (j == phrases[i].length) { //jeigu pasiekem zodzio pabaiga, 
+      isEnd = true                // isEnd true
+      isDeleting = true           // dabar jau reiks trinti
+    }
+
+    if (isDeleting && j === 0) {  //jeigu reikia trinit ir pasiekiam zodzio 'pabaiga'
+      currentPhrase = []
+      isDeleting = false          //perjungiam i false
+      i++                         // paimam sekanti zodi is saraso
+      if (i === phrases.length) { //jeigu pasiekima paskutini zodi, vel imam pirma zodi is saraso
+        i = 0
+      }
+    }
+  }
+  const spedUp = 50;  //sita greiti naudojam kad trintu greiciau negu spausdina
+  const normalSpeed = 100; // normalus spausdinimo greitis
+  const time = isEnd ? 1000 : isDeleting ? spedUp : normalSpeed //ternary pasitikrinimui koki greiti naudoti
+  setTimeout(loop, time) //sita dalis vel iskvies vis funkcija tik po tam tikro intervalo
+}
+
+loop(); //pirma karta iskvieciam funkcija, kad loopas uzsikurtu
+
+
+
 /* partners: start */
 /* partners: end */
 

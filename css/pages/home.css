@@ -97,6 +97,12 @@ html {
     margin: 25px 0;
 }
 
+
+.typingText {
+    height: 0.8em;
+    display: inline-block;
+}
+
 .flying1{
     animation: flyingImage1 1.5s;
 }
