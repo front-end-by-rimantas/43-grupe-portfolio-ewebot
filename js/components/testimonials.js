@@ -17,10 +17,11 @@ const observer = new IntersectionObserver(entries => { //blokas skirtas stebeti 
         if (entry.isIntersecting) {
         // Add the animation class
         entry.target.classList.add('animation');
+        console.log(entry.target.classList);
         }
     });
     });
-    
+        
 
     //dots ant slides scrolling effect
     function slider(elem, n, dotClass, cssVariable ){
@@ -46,16 +47,6 @@ const observer = new IntersectionObserver(entries => { //blokas skirtas stebeti 
         document.querySelector('.'+n).style.setProperty("--testimonial-index", index);
       };
     
-
-
-
-
-
-
-
-
-
-
 
 
 export { changeHeight, observer, slider };
