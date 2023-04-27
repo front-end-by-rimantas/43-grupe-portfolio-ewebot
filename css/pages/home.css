@@ -583,6 +583,15 @@ background: var(--violet-elements);
     font-size: 12px;
 }
 
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons .icon {
+    text-decoration: none;    
+}
+
 @media (min-width:768px) {
     .blog-columns-box {
         flex-direction: row;
