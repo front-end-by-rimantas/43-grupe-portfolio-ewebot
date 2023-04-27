@@ -71,6 +71,10 @@ html {
     margin: 25px 0;
 }
 
+.typingText {
+    height: 0.8em;
+    display: inline-block;
+}
 /*** hero contacts ***/
 
 .section-hero .contact-margin-1 {
