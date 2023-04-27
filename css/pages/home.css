@@ -591,6 +591,7 @@ background: var(--violet-elements);
     transition: width 0.5s;
     width: 17px;
     gap: 10px;
+    padding: 1px;
 }
 
 .icons:hover {
