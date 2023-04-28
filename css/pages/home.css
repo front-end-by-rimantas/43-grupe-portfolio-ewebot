@@ -22,6 +22,7 @@ html {
 /* hero: start */
 .section-hero {
     position: relative;
+    padding-top: 60px;
 }
 
 .section-hero .hero-image img {
@@ -321,9 +322,8 @@ html {
 
 /* partners: start */
 .container.section-partners  {
-    padding: 0;
-    margin-top: -100px;
-    margin-bottom: -100px;
+    margin-top: -70px;
+    margin-bottom: -70px;
 }
 
 .section-partners .partner-logo-img img {
