@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="container">
+    <header class="container" id="header">
         <div class="row">
             <div class="col-12 main-header">
                 <a href="#" class="logo">
@@ -24,11 +24,47 @@
 
                 <div class="nav-right">
                     <nav class="main-nav desktop">
-                        <a href="#" class="main-nav-item with-submenu active">Home</a>
-                        <a href="#" class="main-nav-item with-submenu">Pages</a>
-                        <a href="#" class="main-nav-item with-submenu">Mega Menu</a>
-                        <a href="#" class="main-nav-item with-submenu">Blog</a>
-                        <a href="#" class="main-nav-item with-submenu">Shop</a>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item active">Home</a>
+                        </div>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item with-submenu">Pages</a>
+                            <div class="submenu">
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">About Us</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item with-submenu">Services</a>
+                                    <div class="submenu">
+                                        <div class="menu-item-wrapper">
+                                            <a href="#" class="main-nav-item">Page 1</a>
+                                        </div>
+                                        <div class="menu-item-wrapper">
+                                            <a href="#" class="main-nav-item">Page 2</a>
+                                        </div>
+                                        <div class="menu-item-wrapper">
+                                            <a href="#" class="main-nav-item">Page3</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">Our Team</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">FAQ</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">Pricing</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">Terms</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="main-nav-item ">Blog</a>
+                        <a href="#" class="main-nav-item ">Shop</a>
                         <a href="#" class="main-nav-item">Contacts</a>
                     </nav>
                     <nav class="main-nav mobile">
@@ -47,7 +83,18 @@
                         </div>
                     </nav>
                     <a href="#" class="header-button tablet">Get in touch</a>
-                    <a class="header-search tablet"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+
+                    <div class="header-search tablet">
+                        <a><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <div class="search-submenu">
+                            <input type="text">
+                            <i class="cursor"></i>
+                            <a><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+
                     <div class="header-desktop-hamburger tablet">
                         <div class="hamburger-wrapp">
                             <span class="first"></span>

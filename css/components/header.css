@@ -4,13 +4,17 @@ header.container {
     font-family: 'Rubik', sans-serif;
     font-size:16px;
     position:fixed;
-    background-color:rgba(255,255,255,0.95);
     padding-top: 25px;
     padding-bottom: 30px;
     z-index:5;
 }
 
-header.container div{
+header.scrolled{
+    background-color:rgba(255,255,255,0.95);
+    box-shadow: -3px 10px 16px -4px rgba(0,0,0,0.09);
+}
+
+header.container>div{
     margin: 0px;
 }
 
@@ -66,6 +70,101 @@ header.container .row, header.container [class^="col"] {
 
 }
 
+/* SUBMENU reikalai */
+.menu-item-wrapper{
+    position:relative;
+}
+
+.menu-item-wrapper:hover>.submenu{
+    display:flex;
+}
+
+header .main-nav .submenu {
+    padding-top: 50px;
+}
+.submenu {
+    display:none;
+    flex-direction: column;
+    gap:18px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 2;
+    padding: 20px 65px 20px 20px;
+}
+
+.submenu *{
+    z-index: 5;
+    
+}
+
+.submenu::after{
+    content:'';
+    position: absolute;
+    z-index: 4;
+    width:100%;
+    height:90%;
+    bottom:0;
+    left:0;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 12%);
+}
+
+.submenu::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #ffffff;
+    position: absolute;
+    transform: rotate(270deg);
+    left: 21px;
+    top: 0px;
+    z-index: 5;
+}
+
+header .main-nav .submenu .submenu{
+    padding-top: 0px;
+}   
+.submenu .submenu {
+    display: none;
+    left:75px;
+    top:-20px;
+    z-index: 7;
+    padding: 20px 65px 20px 60px;
+}
+
+.submenu .submenu::before{
+    left: 22px;
+    top: 0px;
+    transform: rotate(180deg);
+}
+
+.submenu .submenu::after{
+    content:'';
+    position: absolute;
+    z-index: 4;
+    width:80%;
+    height:110%;
+    bottom:0;
+    left:40px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 12%);
+}
+
+.submenu .with-submenu::after{
+    font-family: FontAwesome;
+    font-size:12px;
+    padding-left: 9px;
+    height:3px;
+    content: "\f054";
+
+}
+
+
+
 /* button pradzia galima sita stiliuka i buttonus panaudo */
 
 .header-button {
@@ -107,11 +206,58 @@ header.container .row, header.container [class^="col"] {
 
 /* button galas galima sita stiliuka i buttonus panaudo */
 
+
+/* SEARCH ICONKE IR SUBMENIUKAS */
 .header-search{
     cursor: pointer;
     font-size: 20px;
     font-weight: 200;
     margin: 0 15px;
+    position: relative;
+}
+
+.search-submenu{
+    position: absolute;
+    top: 41px;
+    right: 1px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    padding: 8px 11px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 12%);
+
+}
+
+.search-submenu input {
+    border:none;
+}
+
+.search-submenu input[type=text]:focus {
+    border: none;
+  }
+
+.search-submenu	.cursor {
+	position: absolute;
+	width: 1px;
+	height: 40%;
+	background-color: gray;
+	left: 13px;
+	top: 30%;
+	animation-name: blink;
+	animation-duration: 800ms;
+	animation-iteration-count: infinite;
+	opacity: 1;
+}
+
+.search-submenu .cursor:focus + i {
+	display: none;
+}
+
+@keyframes blink {
+	from { opacity: 1; }
+	to { opacity: 0; }
 }
 
 

@@ -17,7 +17,6 @@ const observer = new IntersectionObserver(entries => { //blokas skirtas stebeti 
         if (entry.isIntersecting) {
         // Add the animation class
         entry.target.classList.add('animation');
-        console.log(entry.target.classList);
         }
     });
     });
