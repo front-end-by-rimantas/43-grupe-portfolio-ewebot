@@ -348,3 +348,67 @@ header .main-nav .submenu .submenu{
         display:none;
     }
 }
+
+.side-menu-overlay {
+    position: absolute;
+    z-index: 8;
+    top: 10px;
+    left: 0;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    transition: opacity .3s ease,visibility .3s ease;
+    opacity: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.side-menu-overlay.active{
+    visibility: visible;
+    cursor: url(../../img/close-icon.png) 16 16,default;
+    opacity: 1;
+}
+
+.side-menu {
+    visibility: hidden;
+    position: absolute;
+    z-index: 11;
+    top: 10px;
+    right: 0px;
+    width: 0px;
+    height: 100vh;
+    background-color: #ffffff;
+    transition: width 1s;
+    flex-direction: column;
+    gap:20px;
+    align-items: flex-start;
+    padding: 30px 40px;
+}
+
+.side-menu.active {
+    visibility: visible;
+    display: flex;
+    opacity:1;
+    width:410px;
+}
+
+.side-menu>img {
+    height:70px;
+    margin-bottom: 40px;
+
+}
+
+.side-menu a{
+    text-decoration: none;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.side-menu a::before{
+    font: normal normal normal 14px/1 FontAwesome;
+    text-align: center;
+    font-size: 23px;
+    padding: 10px;
+    line-height: 30px;
+}

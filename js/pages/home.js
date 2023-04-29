@@ -9,28 +9,43 @@ import { menuScrolled  } from "../components/header.js";
 
 
 /* header: start */
-menuScrolled();
-window.addEventListener('scroll', menuScrolled);
 
-const search = document.getElementById('search');
-const html = document.querySelector("html");
-const submenu = document.getElementById('search-submenu');
-const search2 = document.getElementById('search-icon');
-
-search.addEventListener("click", function (e)  {  
-    console.log('add');
-    submenu.classList.add("active");
+    // check if window is scrolled down
+      menuScrolled();
+      window.addEventListener('scroll', menuScrolled);
     
-});
+    //search bar apear and disapear
+      const search = document.getElementById('search');
+      const html = document.querySelector("html");
+      const submenu = document.getElementById('search-submenu');
+      const search2 = document.getElementById('search-icon');
+
+      search.addEventListener("click", function (e)  {  
+          submenu.classList.add("active");
+          
+      });
+
+      html.addEventListener("click", function (e) {
+          if (e.target !== submenu && e.target !== search2 && !submenu.contains(e.target)){
+            submenu.classList.remove("active");
+          }         
+      });
+
+      //Desktop side menu slide in out
+        const dskHmb = document.getElementById('desktop-hamburger');
+        const overlay = document.querySelector('.side-menu-overlay');
+        const sideMenu = document.getElementById('side-menu');
+        dskHmb.addEventListener('click', function(e) {
+            overlay.classList.add('active');
+            sideMenu.classList.add('active');
+        });
 
 
-  html.addEventListener("click", function (e) {
-    console.log('html');
-      if (e.target !== submenu && e.target !== search2 && !submenu.contains(e.target)){
-        console.log(e.target);
-        submenu.classList.remove("active");
-      }         
-});
+        overlay.addEventListener('click', function(e) {
+          overlay.classList.remove('active');
+          sideMenu.classList.remove('active');
+          
+        });
 
 
 
