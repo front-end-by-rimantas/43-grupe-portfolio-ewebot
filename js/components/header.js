@@ -1,3 +1,5 @@
+
+
 function menuScrolled() {
     if (window.scrollY > 10){
       document.getElementById('header').classList.add('scrolled');
@@ -7,5 +9,9 @@ function menuScrolled() {
   };
 
 
+  // Search show hidde
+
+   
+   
 
   export { menuScrolled };

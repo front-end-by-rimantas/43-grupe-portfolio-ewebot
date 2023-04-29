@@ -217,17 +217,20 @@ header .main-nav .submenu .submenu{
 }
 
 .search-submenu{
+    display: none;
     position: absolute;
     top: 41px;
     right: 1px;
-    display: flex;
     flex-wrap: nowrap;
     gap: 25px;
     padding: 8px 11px;
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 12%);
+}
 
+.search-submenu.active {
+    display: flex;
 }
 
 .search-submenu input {
@@ -251,7 +254,11 @@ header .main-nav .submenu .submenu{
 	opacity: 1;
 }
 
-.search-submenu .cursor:focus + i {
+.search-submenu input:focus{
+    outline: none;
+}
+
+.search-submenu input:focus + i {
 	display: none;
 }
 
