@@ -22,7 +22,17 @@ html {
 /* hero: start */
 .section-hero {
     position: relative;
-    padding-top: 60px;
+    padding-top: 40px;
+}
+@media (min-width: 992px) {
+    .section-hero {
+        padding-top: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .section-hero {
+        padding-top: 10px;
+    }
 }
 
 .section-hero .hero-image img {
@@ -35,6 +45,21 @@ html {
     width: 100%;
     padding: 0;
 }
+@media (min-width: 768px) {
+    .section-hero .hero-content-margin {
+        margin-top: 50px;
+    }
+}
+@media (min-width: 992px) {
+    .section-hero .hero-content-margin {
+        margin-top: 90px;
+    }
+}
+@media (min-width: 1200px) {   
+    .section-hero .hero-content-margin {
+        margin-top: 150px;
+    }
+}
 
 .section-hero .hero-heading-text {
     font-family: "Montserrat", Sans-serif;
@@ -42,6 +67,11 @@ html {
     text-transform: capitalize;
     font-weight: 900;
     line-height: 1em;
+}
+@media (min-width: 1200px) {
+    .section-hero .hero-heading-text {
+        font-size: 76px;
+    }
 }
 
 .hero-image-wraper {
@@ -69,23 +99,6 @@ html {
     left: 0px;
 }
 
-@media (min-width: 1200px) {
-    .section-hero .hero-heading-text {
-        font-size: 76px;
-    }
-}
-
-@media (min-width: 992px) {
-    .section-hero .hero-content-margin {
-        margin-top: 50px;
-    }
-}
-@media (min-width: 1200px) {
-    .section-hero .hero-content-margin {
-        margin-top: 150px;
-    }
-}
-
 .section-hero .gradient-text {
     background-color: #FF4969;
     background-image: linear-gradient(75deg,#FF4969,#FC9D44 50%);
@@ -101,7 +114,6 @@ html {
     color: #696687;
     margin: 25px 0;
 }
-
 
 .typingText {
     height: 0.8em;
@@ -356,7 +368,12 @@ html {
 
 
 .row > .left-column {
-    margin-top: 150px;
+    margin-top: 30px;
+}
+@media (min-width: 992px) {
+    .row > .left-column {
+        margin-top: 150px;
+    }
 }
 
 .rectangle-text {
@@ -729,11 +746,6 @@ background: var(--violet-elements);
         --slide-width: 600px
     }
 }
-
-
-
-
-
 /* featured projects: end */
 
 /* why choose us 2: start */
@@ -746,6 +758,9 @@ background: var(--violet-elements);
     text-align: center;
 }
 
+.whyus2 .whyus2-services {
+    margin-top: -30px;
+}
 
 .services{
     display: flex;
@@ -919,7 +934,9 @@ background: var(--violet-elements);
     transform: scale(1.2);
 }
 
-
+.blog-section .blog-columns-all {
+    margin-top: -30px;
+}
 
 .blog-title {
     text-align: center;
