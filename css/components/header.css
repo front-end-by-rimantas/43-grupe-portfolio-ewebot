@@ -556,6 +556,7 @@ header .main-nav .submenu .submenu{
 
 .mobile-menu-wrap.active {
     display: flex;
+    box-shadow: -3px 10px 16px -4px rgba(0,0,0,0.09);
 }
 
 .mobile-menu-wrap .menu-item-wrapper {
