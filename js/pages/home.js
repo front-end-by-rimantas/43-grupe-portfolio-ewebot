@@ -4,7 +4,7 @@
 import { changeHeight, observer, slider } from "../components/testimonials.js";
 import { carousel } from "../components/featured.js";
 import { imgPositioning, observer2, heroFlyingElements } from "../components/flyingphones.js";
-
+import { flyingObjects } from "../components/flying-objects.js";
 // FUNCTION EXECUTION
 
 
@@ -36,6 +36,8 @@ goTopBtn.addEventListener('click', () => {
 /* hero: start */
 heroFlyingElements();
 window.addEventListener("resize", heroFlyingElements);
+
+flyingObjects('flying-obj')
 /* hero: end */
 
 const textDisplay = document.getElementById('typingText') // elementas kuriame atvaizduosime einamaja fraze

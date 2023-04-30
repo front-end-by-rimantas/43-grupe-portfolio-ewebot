@@ -214,9 +214,9 @@ html {
     width: 36px;
     position: absolute;
     top: 570px;
-    left: 0px;
+    left: -80px;
     animation-name: floating;
-    animation-duration: 7s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 30px;
@@ -225,10 +225,10 @@ html {
 .triangle-img-right {
     width: 36px;
     position: absolute;
-    top: 200px;
-    right: 70px;
+    top: 20px;
+    right: -25px;
     animation-name: floating;
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 30px;
@@ -238,7 +238,7 @@ html {
 .x-large-img-left {
     width: 21px;
     position: absolute;
-    left: 00px;
+    left: -60px;
     top: 100px;
     animation-name: floating;
     animation-duration: 7s;
@@ -251,7 +251,7 @@ html {
     width: 21px;
     position: absolute;
     top: 600px;
-    right: 30px;
+    right: -30px;
     animation-name: floating;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -264,7 +264,7 @@ html {
     width: 13px;
     position: absolute;
     top: 300px;
-    left: 20px;
+    left: -60px;
     animation-name: floating;
     animation-duration: 8s;
     animation-iteration-count: infinite;
@@ -272,7 +272,7 @@ html {
     margin-left: 30px;
     margin-top: 5px;
 }
-.x-small-img-left2 {
+.x-small-img-left-2 {
     width: 13px;
     position: absolute;
     top: 20px;
@@ -289,7 +289,7 @@ html {
     width: 13px;
     position: absolute;
     top: 450px;
-    right: 50px;
+    right: -20px;
     animation-name: floating;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -302,8 +302,110 @@ html {
 .circle-img-right {
     width: 24px;
     position: absolute;
+    top: 200px;
+    right: -20px;
+    animation-name: floating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.triangle-img-left2 {
+    width: 36px;
+    position: absolute;
+    top: 370px;
+    right: -250px;
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.triangle-img-right2 {
+    width: 36px;
+    position: absolute;
+    top: 200px;
+    left: -350px;
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    z-index: -1;
+}
+
+.x-large-img-left2 {
+    width: 21px;
+    position: absolute;
+    right: -300px;
+    top: 100px;
+    animation-name: floating;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.x-large-img-right2 {
+    width: 21px;
+    position: absolute;
+    top: 600px;
+    left: -550px;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.x-small-img-left2 {
+    width: 13px;
+    position: absolute;
+    top: 300px;
+    right: -500px;
+    animation-name: floating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.x-small-img-left3 {
+    width: 13px;
+    position: absolute;
+    top: 500px;
+    right: -500px;
+    animation-name: floating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.x-small-img-right2 {
+    width: 13px;
+    position: absolute;
+    top: 100px;
+    left: -450px;
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+   
+}
+
+.circle-img-right2 {
+    width: 24px;
+    position: absolute;
     top: 335px;
-    right: 50px;
+    left: -500px;
     animation-name: floating;
     animation-duration: 8s;
     animation-iteration-count: infinite;
