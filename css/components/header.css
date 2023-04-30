@@ -143,16 +143,14 @@ header .main-nav .submenu .submenu{
 }   
 .submenu .submenu {
     display: none;
-    left:75px;
+    left:50px;
     top:-20px;
     z-index: 7;
-    padding: 20px 65px 20px 60px;
+    padding: 20px 65px 20px 125px;
 }
 
 .submenu .submenu::before{
-    left: 22px;
-    top: 0px;
-    transform: rotate(180deg);
+    display:none;
 }
 
 .submenu .submenu::after{
@@ -162,7 +160,7 @@ header .main-nav .submenu .submenu{
     width:80%;
     height:110%;
     bottom:0;
-    left:40px;
+    left:100px;
     border-radius: 6px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 12%);
