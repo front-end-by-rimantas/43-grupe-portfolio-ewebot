@@ -71,6 +71,17 @@ function menuScrolled() {
 });
   
 
+//sub menu on click
+
+const submenuLinks = document.querySelectorAll('.mobile-menu-wrap .with-submenu');
+
+for (let i of submenuLinks){
+  i.addEventListener("click", function (e)  {  
+    i.classList.toggle('down');
+    i.parentElement.querySelector('.submenu').classList.toggle('active');
+    
+});
+}
 
 
 

@@ -584,12 +584,44 @@ header .main-nav .submenu .submenu{
    }
 }
 
-.mobile-menu-wrap .submenu{
+.mobile-menu-wrap>.menu-item-wrapper>.submenu{
+    padding-top:0px;
+    padding-left:30px;
     overflow: hidden;
     display:flex;
     flex-direction: column;
     gap: 25px;
-    height:400px;
+    height:0px;
     visibility: hidden;
 }
 
+.mobile-menu-wrap .menu-item-wrapper>.submenu>.menu-item-wrapper>.submenu{
+    height:0;
+    visibility: hidden;
+}
+
+.mobile-menu-wrap .menu-item-wrapper>.submenu>.menu-item-wrapper>.submenu.active{
+    height:auto;
+    visibility: visible;
+    padding-top:30px;
+    padding-left: 60px;
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.mobile-menu-wrap>.menu-item-wrapper>.submenu.active{
+    padding-top: 30px;
+    height: auto;
+    visibility: visible;
+}
+
+.mobile-menu-wrap .with-submenu::after{
+    content: "\f054";
+}
+
+
+.mobile-menu-wrap .with-submenu.down::after{
+    content: "\f078";
+}
