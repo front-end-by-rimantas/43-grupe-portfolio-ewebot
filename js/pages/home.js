@@ -4,7 +4,6 @@
 import { changeHeight, observer, slider } from "../components/testimonials.js";
 import { carousel } from "../components/featured.js";
 import { imgPositioning, observer2, heroFlyingElements } from "../components/flyingphones.js";
-import { flyingObjects } from "../components/flying-objects.js";
 // FUNCTION EXECUTION
 
 
