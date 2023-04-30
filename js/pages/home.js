@@ -14,48 +14,9 @@ import { menuScrolled  } from "../components/header.js";
       menuScrolled();
       window.addEventListener('scroll', menuScrolled);
     
-    //search bar apear and disapear
-      const search = document.getElementById('search');
-      const html = document.querySelector("html");
-      const submenu = document.getElementById('search-submenu');
-      const search2 = document.getElementById('search-icon');
-
-      search.addEventListener("click", function (e)  {  
-        if (submenu.classList.contains('active')) {
-          submenu.classList.remove("active");          
-        }  else {
-          submenu.classList.add("active");
-        }
-        
-          
-      });
-
-      html.addEventListener("click", function (e) {
-          if (e.target !== submenu && e.target !== search2 && !submenu.contains(e.target)){
-            submenu.classList.remove("active");
-          }         
-      });
-
-      //Desktop side menu slide in out
-        const dskHmb = document.getElementById('desktop-hamburger');
-        const overlay = document.querySelector('.side-menu-overlay');
-        const sideMenu = document.getElementById('side-menu');
-        const bodySlide = document.getElementById('slideAll');
-        dskHmb.addEventListener('click', function(e) {
-            overlay.classList.add('active');
-            sideMenu.classList.add('active');
-            bodySlide.classList.add('active');
-
-        });
 
 
-        overlay.addEventListener('click', function(e) {
-          overlay.classList.remove('active');
-          sideMenu.classList.remove('active');
-          bodySlide.classList.remove('active');
-          
-        });
-
+     
 
 
 /* header: end */
@@ -66,7 +27,6 @@ const goTopBtn = document.querySelector('.btn-back2top');
 window.addEventListener('scroll', checkHeight)
 
 function checkHeight(){
-  console.log('scrolled');
   if(window.scrollY > 1000) {
     goTopBtn.style.display = "flex"
   } else {

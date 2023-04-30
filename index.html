@@ -15,8 +15,11 @@
 </head>
 
 <body id="slideAll">
+
+    <!-- HEADER MENU and stuff -->
     <header class="container" id="header">
         <div class="row">
+
             <div class="col-12 main-header">
                 <a href="#" class="logo">
                     <img src="./img/logo.png" alt="logo">
@@ -63,25 +66,89 @@
                             </div>
                         </div>
                         
-                        <a href="#" class="main-nav-item ">Blog</a>
-                        <a href="#" class="main-nav-item ">Shop</a>
-                        <a href="#" class="main-nav-item">Contacts</a>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item ">Blog</a>
+                        </div>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item ">Shop</a>
+                        </div>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item">Contacts</a>
+                        </div>
                     </nav>
+
+
+
                     <nav class="main-nav mobile">
-                        <div class="hamburger-wrapp">
+                        <div class="hamburger-wrapp" id="mobile-hamburger">
                             <span class="first"></span>
                             <span class="second"></span>
                             <span class="third"></span>
                         </div>
+
+
                         <div class="mobile-menu-wrap">
-                            <a href="#" class="main-nav-item with-submenu">Home</a>
-                            <a href="#" class="main-nav-item with-submenu">Pages</a>
-                            <a href="#" class="main-nav-item with-submenu">Mega Menu</a>
-                            <a href="#" class="main-nav-item with-submenu">Blog</a>
-                            <a href="#" class="main-nav-item with-submenu">Shop</a>
-                            <a href="#" class="main-nav-item">Contacts</a>
+                            
+                            <div id="close-mobile-menu">
+                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item active">Home</a>
+                            </div>
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item with-submenu">Pages</a>
+                                <div class="submenu">
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">About Us</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item with-submenu">Services</a>
+                                        <div class="submenu">
+                                            <div class="menu-item-wrapper">
+                                                <a href="#" class="main-nav-item">Page 1</a>
+                                            </div>
+                                            <div class="menu-item-wrapper">
+                                                <a href="#" class="main-nav-item">Page 2</a>
+                                            </div>
+                                            <div class="menu-item-wrapper">
+                                                <a href="#" class="main-nav-item">Page3</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">Our Team</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">FAQ</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">Pricing</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">Terms</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item ">Blog</a>
+                            </div>
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item ">Shop</a>
+                            </div>
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item">Contacts</a>
+                            </div>
+
+
+
                         </div>
                     </nav>
+
+
+
                     <a href="#" class="header-button tablet">Get in touch</a>
 
 
@@ -111,6 +178,8 @@
                 </div>
             </div>
         </div>
+
+
         <aside class="side-menu" id="side-menu">
             <img src="./img/logo.png" alt="logo">
             <p class="side-menu-text">
@@ -139,6 +208,9 @@
             </div>
 
         </aside>
+
+       
+
     </header>
 
     <main >
