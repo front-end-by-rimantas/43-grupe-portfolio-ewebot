@@ -100,7 +100,7 @@ header.container .row, header.container [class^="col"] {
 header .main-nav .submenu {
     padding-top: 50px;
 }
-.submenu {
+.main-nav .submenu {
     display:none;
     flex-direction: column;
     gap:18px;
@@ -110,12 +110,12 @@ header .main-nav .submenu {
     padding: 20px 65px 20px 20px;
 }
 
-.submenu *{
+.main-nav .submenu *{
     z-index: 5;
     
 }
 
-.submenu::after{
+.main-nav .submenu::after{
     content:'';
     position: absolute;
     z-index: 4;
@@ -128,7 +128,7 @@ header .main-nav .submenu {
     box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 12%);
 }
 
-.submenu::before{
+.main-nav .submenu::before{
     content: "";
     width: 0;
     height: 0;
@@ -145,7 +145,7 @@ header .main-nav .submenu {
 header .main-nav .submenu .submenu{
     padding-top: 0px;
 }   
-.submenu .submenu {
+.main-nav .submenu .submenu {
     display: none;
     left:50px;
     top:-20px;
@@ -153,11 +153,11 @@ header .main-nav .submenu .submenu{
     padding: 20px 65px 20px 125px;
 }
 
-.submenu .submenu::before{
+.main-nav .submenu .submenu::before{
     display:none;
 }
 
-.submenu .submenu::after{
+.main-nav .submenu .submenu::after{
     content:'';
     position: absolute;
     z-index: 4;
@@ -312,6 +312,7 @@ header .main-nav .submenu .submenu{
 
 .mobile{
     display:inline-block;
+    margin-right: 15px;
 }
 
 
@@ -535,9 +536,10 @@ header .main-nav .submenu .submenu{
 
 /* MOBILE MENU */
 
-.main-nav.mobiel{
+.main-nav-mobiel{
     position: relative;
 }
+
 .mobile-menu-wrap{
         padding: 30px 60px;
        display: none;
@@ -581,3 +583,13 @@ header .main-nav .submenu .submenu{
     transform: rotate(270deg);
    }
 }
+
+.mobile-menu-wrap .submenu{
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+    height:400px;
+    visibility: hidden;
+}
+
