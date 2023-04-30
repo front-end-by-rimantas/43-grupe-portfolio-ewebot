@@ -37,7 +37,7 @@ goTopBtn.addEventListener('click', () => {
 heroFlyingElements();
 window.addEventListener("resize", heroFlyingElements);
 
-flyingObjects('flying-obj')
+// flyingObjects('flying-obj')
 /* hero: end */
 
 const textDisplay = document.getElementById('typingText') // elementas kuriame atvaizduosime einamaja fraze
