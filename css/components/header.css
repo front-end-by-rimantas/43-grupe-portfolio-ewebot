@@ -1,9 +1,23 @@
+body {
+   position: static;
+   left:0px;
+   transition: left 0.7s;
+}
+
+body.active{
+    position: relative;
+    left:-50px;
+}
+
+
+ 
 header.container {
     margin-top:-10px;
     padding:0;
     font-family: 'Rubik', sans-serif;
     font-size:16px;
     position:fixed;
+    
     padding-top: 25px;
     padding-bottom: 30px;
     z-index:5;
@@ -349,6 +363,9 @@ header .main-nav .submenu .submenu{
     }
 }
 
+
+/* Dekstop slidein menu*/
+
 .side-menu-overlay {
     position: absolute;
     z-index: 8;
@@ -358,7 +375,6 @@ header .main-nav .submenu .submenu{
     width: 100vw;
     height: 100vh;
     content: "";
-    transition: opacity .3s ease,visibility .3s ease;
     opacity: 0;
     background: rgba(0,0,0,0.6);
 }
@@ -378,11 +394,11 @@ header .main-nav .submenu .submenu{
     width: 0px;
     height: 100vh;
     background-color: #ffffff;
-    transition: width 1s;
+    transition: width 0.4s;
     flex-direction: column;
     gap:20px;
     align-items: flex-start;
-    padding: 30px 40px;
+    padding: 30px 0px 30px 40px;
 }
 
 .side-menu.active {

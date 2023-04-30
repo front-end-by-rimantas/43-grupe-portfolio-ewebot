@@ -21,7 +21,12 @@ import { menuScrolled  } from "../components/header.js";
       const search2 = document.getElementById('search-icon');
 
       search.addEventListener("click", function (e)  {  
+        if (submenu.classList.contains('active')) {
+          submenu.classList.remove("active");          
+        }  else {
           submenu.classList.add("active");
+        }
+        
           
       });
 
@@ -35,15 +40,19 @@ import { menuScrolled  } from "../components/header.js";
         const dskHmb = document.getElementById('desktop-hamburger');
         const overlay = document.querySelector('.side-menu-overlay');
         const sideMenu = document.getElementById('side-menu');
+        const bodySlide = document.getElementById('slideAll');
         dskHmb.addEventListener('click', function(e) {
             overlay.classList.add('active');
             sideMenu.classList.add('active');
+            bodySlide.classList.add('active');
+
         });
 
 
         overlay.addEventListener('click', function(e) {
           overlay.classList.remove('active');
           sideMenu.classList.remove('active');
+          bodySlide.classList.remove('active');
           
         });
 
@@ -57,6 +66,7 @@ const goTopBtn = document.querySelector('.btn-back2top');
 window.addEventListener('scroll', checkHeight)
 
 function checkHeight(){
+  console.log('scrolled');
   if(window.scrollY > 1000) {
     goTopBtn.style.display = "flex"
   } else {
