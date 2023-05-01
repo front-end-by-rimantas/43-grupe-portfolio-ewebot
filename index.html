@@ -14,54 +14,211 @@
 
 </head>
 
-<body>
-    <header class="container">
+<body id="slideAll">
+
+    <!-- HEADER MENU and stuff -->
+    <header class="container" id="header">
         <div class="row">
-            <div class="col-12 main-header">
+                <!--LOGO  -->
+            <div class="col-12 main-header"> 
                 <a href="#" class="logo">
                     <img src="./img/logo.png" alt="logo">
                 </a>
 
+                <!--DESKTOP menu  -->
                 <div class="nav-right">
                     <nav class="main-nav desktop">
-                        <a href="#" class="main-nav-item with-submenu active">Home</a>
-                        <a href="#" class="main-nav-item with-submenu">Pages</a>
-                        <a href="#" class="main-nav-item with-submenu">Mega Menu</a>
-                        <a href="#" class="main-nav-item with-submenu">Blog</a>
-                        <a href="#" class="main-nav-item with-submenu">Shop</a>
-                        <a href="#" class="main-nav-item">Contacts</a>
-                    </nav>
-                    <nav class="main-nav mobile">
-                        <div class="hamburger-wrapp">
-                            <span class="first"></span>
-                            <span class="second"></span>
-                            <span class="third"></span>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item active">Home</a>
                         </div>
-                        <div class="mobile-menu-wrap">
-                            <a href="#" class="main-nav-item with-submenu">Home</a>
+                        <div class="menu-item-wrapper">
                             <a href="#" class="main-nav-item with-submenu">Pages</a>
-                            <a href="#" class="main-nav-item with-submenu">Mega Menu</a>
-                            <a href="#" class="main-nav-item with-submenu">Blog</a>
-                            <a href="#" class="main-nav-item with-submenu">Shop</a>
+                            <div class="submenu">
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">About Us</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item with-submenu">Services</a>
+                                    <div class="submenu">
+                                        <div class="menu-item-wrapper">
+                                            <a href="#" class="main-nav-item">Page 1</a>
+                                        </div>
+                                        <div class="menu-item-wrapper">
+                                            <a href="#" class="main-nav-item">Page 2</a>
+                                        </div>
+                                        <div class="menu-item-wrapper">
+                                            <a href="#" class="main-nav-item">Page3</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">Our Team</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">FAQ</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">Pricing</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">Terms</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item ">Blog</a>
+                        </div>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item ">Shop</a>
+                        </div>
+                        <div class="menu-item-wrapper">
                             <a href="#" class="main-nav-item">Contacts</a>
                         </div>
                     </nav>
-                    <a href="#" class="header-button tablet">Get in touch</a>
-                    <a class="header-search tablet"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    <div class="header-desktop-hamburger tablet">
-                        <div class="hamburger-wrapp">
+
+
+                    <!-- MENU MOBILE -->
+                    <nav class="main-nav-mobile mobile">
+                        <div class="hamburger-wrapp" id="mobile-hamburger">
                             <span class="first"></span>
                             <span class="second"></span>
                             <span class="third"></span>
                         </div>
+
+
+                        <div class="mobile-menu-wrap">
+                            
+                            <div id="close-mobile-menu">
+                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item active">Home</a>
+                            </div>
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item with-submenu">Pages</a>
+                                <div class="submenu">
+
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">About Us</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item with-submenu">Services</a>
+                                        
+                                        <div class="submenu">
+                                            <div class="menu-item-wrapper">
+                                                <a href="#" class="main-nav-item">Page 1</a>
+                                            </div>
+                                            <div class="menu-item-wrapper">
+                                                <a href="#" class="main-nav-item">Page 2</a>
+                                            </div>
+                                            <div class="menu-item-wrapper">
+                                                <a href="#" class="main-nav-item">Page3</a>
+                                            </div>
+            
+                                        </div>
+
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">Our Team</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">FAQ</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">Pricing</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">Terms</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item ">Blog</a>
+                            </div>
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item ">Shop</a>
+                            </div>
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item">Contacts</a>
+                            </div>
+
+
+
+                        </div>
+                    </nav>
+
+
+                    <!-- BUTTON get in touch -->
+                    <a href="#" class="header-button tablet">Get in touch</a>
+
+
+                    <div class="header-search tablet" id="search">
+                        <a><i class="fa fa-search" id="search-icon" aria-hidden="true"></i></a>
+                        <div class="search-submenu" id="search-submenu">
+                            <input type="text">
+                            <i class="cursor"></i>
+                            <a><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="header-desktop-hamburger tablet" >
+                        <div class="hamburger-wrapp" id="desktop-hamburger">
+                            <span class="first"></span>
+                            <span class="second"></span>
+                            <span class="third"></span>
+                        </div>
+
+                    <div class="side-menu-overlay"> </div>
+
+                    
+                        
+                    </aside>
                     </div>
                 </div>
             </div>
         </div>
-        
+
+
+        <aside class="side-menu" id="side-menu">
+            <img src="./img/logo.png" alt="logo">
+            <p class="side-menu-text">
+                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lecto rum eleifend option congue nihil doming. Espa notrle neumurit.
+            </p>
+            <div class="contacts-block">
+                <h3>Contacts</h3>
+                <a href="#" class="call fa fa-phone"> 8 800 2563 123</a>
+                <a href="#" class="email fa fa-envelope-o">emil@yoursite.com</a>
+                <a href="#" class="address fa fa-home">27 Division St, New York, NY 10002, United States</a>
+            </div>
+
+            <div class="side-menu-form">
+                <div class="email-form">
+                    <input id="email" class="input" type="email" placeholder="Email Adress">
+                    <a class="btn-side-menu" href="/">Signup</a>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="./" target="_blank" class="twitter social fa fa-twitter"></a>
+                <a href="./" target="_blank" class=" fb social fa fa-facebook"></a>
+                <a href="./" target="_blank" class="google social fa fa-google-plus"></a>
+                <a href="./" target="_blank" class="pinterest social fa fa-pinterest"></a>
+                <a href="./" target="_blank" class="linkedin social fa fa-linkedin"></a>
+            </div>
+
+        </aside>
+
+       
+
     </header>
 
-    <main>
+    <main >
         <!-- back to top: start -->
         <div>
             <button class="btn-back2top fa fa-angle-up"></button>

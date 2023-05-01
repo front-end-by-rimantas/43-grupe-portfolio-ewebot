@@ -4,11 +4,21 @@
 import { changeHeight, observer, slider } from "../components/testimonials.js";
 import { carousel } from "../components/featured.js";
 import { imgPositioning, observer2, heroFlyingElements } from "../components/flyingphones.js";
-
+import { menuScrolled  } from "../components/header.js";
 // FUNCTION EXECUTION
 
 
 /* header: start */
+
+    // check if window is scrolled down
+      menuScrolled();
+      window.addEventListener('scroll', menuScrolled);
+    
+
+
+     
+
+
 /* header: end */
 
 /* back to top: start */

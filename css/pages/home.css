@@ -843,7 +843,7 @@ background: var(--violet-elements);
 
 .service3{
     background-image: url("../../img/why-choose-us2-services/home10_service3.png");
-}
+}   
 .service:hover .service3{
     background-image: url("../../img/why-choose-us2-services/home10_service3-active.png");
 }
