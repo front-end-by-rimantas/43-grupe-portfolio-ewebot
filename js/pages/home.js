@@ -132,9 +132,10 @@ observer2.observe(document.querySelector('.animated6-2'));
 
 /* girl with phone: start */
 // observer2.observe(document.querySelector('.girl-animate'));
-
+observer2.observe(document.querySelector('.girl-animate'));
 observer2.observe(document.querySelector('.numeric')); 
 const objects = document.querySelectorAll('.numeric');
+
 const object1 = objects[0];
 let number1 = 0;
 
@@ -151,19 +152,48 @@ const observer3 = new IntersectionObserver(entries => {
   if (entries[0].isIntersecting) {
     setInterval(function(){ 
       object1.innerText = number1 + 'm';
-      object2.innerText = number2 + '%';
-      object3.innerText = number3;
-      object4.innerText = number4 + '%';
+     
       number1 <= 310 ? number1 = number1 + 10 : '';
-      number2 <= 88 ? number2 = number2 + 1: '';
-      number3 <= 1320 ? number3 = number3 + 30: '';
+   
+    }, 10);
+  }
+});
+const observer4 = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      setInterval(function(){ 
+        object2.innerText = number2 + '%';
+       
+        number2 <= 88 ? number2 = number2 + 1: '';
+     
+      }, 10);
+    }
+  });
+
+const observer5 = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) {
+    setInterval(function(){ 
+        object3.innerText = number3;
+       
+        number3 <= 1320 ? number3 = number3 + 30: '';
+      }, 10);
+    }
+  });
+
+const observer6 = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) {
+    setInterval(function(){ 
+      object4.innerText = number4 + '%';
+     
       number4 <= 92 ? number4 = number4 + 2: '';
     }, 10);
   }
 });
 
-observer3.observe(objects[0]);
 
+observer3.observe(objects[0]);
+observer4.observe(objects[1]);
+observer5.observe(objects[2]);
+observer6.observe(objects[3]);
 /* girl with phone: end */
 
 /* featured projects: start */
