@@ -1,0 +1,49 @@
+.flying-dots-wrapper{
+    --start-positionY:100px;
+    --start-positionX:100px;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+}
+
+.flying-dots-wrapper>.dot{   
+        position:absolute;
+        bottom:-10px;
+		width: 20px;
+		height: 20px;
+		background: #FEA039;
+		border-radius: 50%;
+        animation-name:taskiukas;
+        animation-delay: var(--delay);
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+}
+
+@keyframes taskiukas {
+    0%{ 
+        bottom: var(--y);
+        left: var(--x);
+        opacity:1;
+    }
+    40%{
+        bottom: calc(var(--y) + 100px);
+        left: calc(var(--x) + 60px);
+    }
+
+    80%{
+        bottom: calc(var(--y) + 200px);
+        left: calc(var(--x) - 20px);
+        opacity:1;
+
+    }
+
+    100%{
+        bottom: calc(var(--y) + 300px);
+        left: calc(var(--x) - 40px);
+        opacity: 0;
+    }
+
+}
