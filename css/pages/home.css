@@ -414,6 +414,10 @@ html {
     margin-top: 5px;
 }
 
+.no-overflow {
+    overflow: hidden;
+}
+
 @keyframes floating {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(20px, 15px) rotate(40deg); }
