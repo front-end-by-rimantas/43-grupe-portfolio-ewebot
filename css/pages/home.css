@@ -419,6 +419,20 @@ html {
     50%  { transform: translate(20px, 15px) rotate(40deg); }
     100%   { transform: translate(0, -0px); }   
 }
+
+@media (max-width: 2300px) {
+    .x-small-img-left2, 
+    .x-small-img-left3,
+    .x-large-img-left2,
+    .triangle-img-left2,
+    .triangle-img-right2,
+    .circle-img-right2,
+    .x-small-img-right2,
+    .x-large-img-right2 {
+        display: none;
+    }
+}
+
 /* hero: end */
 
 /* partners: start */
