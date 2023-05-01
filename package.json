@@ -1,16 +1,64 @@
 {
-    "name": "43-grupe-portfolio",
+    "name": "43-grupe-portfolio-ewebot",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "dev": "dead-server --host=localhost --port=4307",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest --passWithNoTests",
+        "test:all": "jest --watchAll --passWithNoTests --coverage",
+        "test:coverage": "jest --coverage"
     },
-    "keywords": [],
+    "keywords": [
+        "HTML",
+        "CSS",
+        "JS"
+    ],
+    "contributors": [
+        {
+        "name" : "Aušra",
+        "url" : "https://github.com/AusraMundus"
+        },
+
+        {
+        "name" : "Povilas",
+        "url" : "https://github.com/baubasdrsk"
+        },
+
+        {
+        "name" : "Nerijus",    
+        "url" : "https://github.com/NerijusBun"
+        },
+
+        {
+        "name" : "Karolis",    
+        "url" : "https://github.com/karolis879"
+        },
+         
+        {
+        "name" : "Saulius",        
+        "url" : "https://github.com/sauliuskarlinskas"
+        }
+    ],
     "author": "Rimantas (https://github.com/belauzas)",
     "license": "MIT",
     "devDependencies": {
-        "dead-server": "^1.0.9"
+        "@babel/eslint-parser": "^7.19.1",
+        "@babel/plugin-transform-modules-commonjs": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "babel-jest": "^26.6.3",
+        "dead-server": "^1.0.9",
+        "eslint": "^7.32.0",
+        "eslint-config-node": "^4.1.0",
+        "eslint-plugin-import": "^2.24.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "jest": "^26.6.3",
+        "prettier": "2.2.1"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.jsx?$": "babel-jest"
+        }
     }
 }

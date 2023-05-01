@@ -1,0 +1,81 @@
+/* Most used colour variables */
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap);
+@import '../3rd-party/font-awesome.min.css';
+
+:root {
+    --main-dark-color: #3C3760;
+    /* light grey mainly used in partners logos */
+    --partners-colour: #CECCD6;
+     /* button borders, carusel slide dots */
+    --violet-elements: #6657E0;
+    /* secondary color */
+    --main-sub-color: #F6722D;
+    
+    /* gradient red to orange */
+    --red-orange-gradient: linear-gradient(75deg,#FE5166,#FE9055 80%);
+   
+    /* gradient orange to red */
+    --orange-red-gradient: linear-gradient(96deg,#F2A64C 0%,#FF7042 51%);
+   
+    /* gradient white to blue */
+    --white-blue-gradient: linear-gradient(96deg, #9085EA 0%,#7365E3 51%, #9289f1 100%);
+  }
+
+  body, body * {
+    color:  var(--main-dark-color);
+  }
+  
+  /* section name text */
+  
+  .section-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /*  Text between paragraph and section name, main section header */
+  
+    .column-heading-text{
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 30px;
+      text-transform: capitalize;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+  /* Column paragraph text */
+
+  .column-paragraph-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+  }
+
+  /* Bigger paragraph text in 'Experience section' and 'Get free seo analysis' and so on... */
+
+  .column-paragraph-bigger {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+    }
+    
+    
+    
+    body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    }
+    
+    ol, ul {
+    list-style: none;
+    }
+    
+   

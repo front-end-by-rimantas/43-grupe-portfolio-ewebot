@@ -1,0 +1,105 @@
+.form label {
+    display: none;
+}
+
+/* hero: start */
+
+.section-hero .hero-form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 13px 13px 51px 0px #0a335029;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.section-hero .form > input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;    
+    padding-left: 1em;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: auto;
+}
+.section-hero .form :focus-visible {
+    outline-color: transparent;
+}
+
+.section-hero .form > button {
+    min-width: 178px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 450px) {
+    .section-hero .hero-form {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    .section-hero .form input {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-hero .hero-form {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .section-hero .hero-form {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+}
+/* hero: end */
+
+/* get free seo analysis?: start */
+.section-seo .seo-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+}
+
+.section-seo .form > input,
+.section-seo .form > textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    color: #696588;
+    padding-left: 1em;
+    background-color: #f9f9f9;
+    border: 2px solid #eaedef;
+    border-radius: 5px;
+}
+
+.section-seo .form > textarea {
+    resize: none;
+    height: 8em;
+    padding-top: 1em; 
+}
+
+.section-seo .form > input::placeholder,
+.section-seo .form > textarea::placeholder {
+    color: #696588;
+}
+
+.section-seo .form :focus-visible {
+    outline-color: transparent;
+}
+
+.section-seo .btn-get_free_seo_analysis {
+    margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+    .section-seo .form > input {
+        width: calc(50% - 5px);
+    }
+}
+
+/* get free seo analysis?: end */

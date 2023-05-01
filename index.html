@@ -6,10 +6,1001 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- Fav icon added -->
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <!-- Fav icon end -->
+    <link rel="stylesheet" href="./css/pages/home.css">
+
 </head>
 
-<body>
-    CONTENT
+<body id="slideAll">
+
+    <!-- HEADER MENU and stuff -->
+    <header class="container" id="header">
+        <div class="row">
+                <!--LOGO  -->
+            <div class="col-12 main-header"> 
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+
+                <!--DESKTOP menu  -->
+                <div class="nav-right">
+                    <nav class="main-nav desktop">
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item active">Home</a>
+                        </div>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item with-submenu">Pages</a>
+                            <div class="submenu">
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">About Us</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item with-submenu">Services</a>
+                                    <div class="submenu">
+                                        <div class="menu-item-wrapper">
+                                            <a href="#" class="main-nav-item">Page 1</a>
+                                        </div>
+                                        <div class="menu-item-wrapper">
+                                            <a href="#" class="main-nav-item">Page 2</a>
+                                        </div>
+                                        <div class="menu-item-wrapper">
+                                            <a href="#" class="main-nav-item">Page3</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">Our Team</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">FAQ</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">Pricing</a>
+                                </div>
+                                <div class="menu-item-wrapper">
+                                    <a href="#" class="main-nav-item">Terms</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item ">Blog</a>
+                        </div>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item ">Shop</a>
+                        </div>
+                        <div class="menu-item-wrapper">
+                            <a href="#" class="main-nav-item">Contacts</a>
+                        </div>
+                    </nav>
+
+
+                    <!-- MENU MOBILE -->
+                    <nav class="main-nav-mobile mobile">
+                        <div class="hamburger-wrapp" id="mobile-hamburger">
+                            <span class="first"></span>
+                            <span class="second"></span>
+                            <span class="third"></span>
+                        </div>
+
+
+                        <div class="mobile-menu-wrap">
+                            
+                            <div id="close-mobile-menu">
+                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item active">Home</a>
+                            </div>
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item with-submenu">Pages</a>
+                                <div class="submenu">
+
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">About Us</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item with-submenu">Services</a>
+                                        
+                                        <div class="submenu">
+                                            <div class="menu-item-wrapper">
+                                                <a href="#" class="main-nav-item">Page 1</a>
+                                            </div>
+                                            <div class="menu-item-wrapper">
+                                                <a href="#" class="main-nav-item">Page 2</a>
+                                            </div>
+                                            <div class="menu-item-wrapper">
+                                                <a href="#" class="main-nav-item">Page3</a>
+                                            </div>
+            
+                                        </div>
+
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">Our Team</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">FAQ</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">Pricing</a>
+                                    </div>
+                                    <div class="menu-item-wrapper">
+                                        <a href="#" class="main-nav-item">Terms</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item ">Blog</a>
+                            </div>
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item ">Shop</a>
+                            </div>
+                            <div class="menu-item-wrapper">
+                                <a href="#" class="main-nav-item">Contacts</a>
+                            </div>
+
+
+
+                        </div>
+                    </nav>
+
+
+                    <!-- BUTTON get in touch -->
+                    <a href="#" class="header-button tablet">Get in touch</a>
+
+
+                    <div class="header-search tablet" id="search">
+                        <a><i class="fa fa-search" id="search-icon" aria-hidden="true"></i></a>
+                        <div class="search-submenu" id="search-submenu">
+                            <input type="text">
+                            <i class="cursor"></i>
+                            <a><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="header-desktop-hamburger tablet" >
+                        <div class="hamburger-wrapp" id="desktop-hamburger">
+                            <span class="first"></span>
+                            <span class="second"></span>
+                            <span class="third"></span>
+                        </div>
+
+                    <div class="side-menu-overlay"> </div>
+
+                    
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <aside class="side-menu" id="side-menu">
+            <img src="./img/logo.png" alt="logo">
+            <p class="side-menu-text">
+                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lecto rum eleifend option congue nihil doming. Espa notrle neumurit.
+            </p>
+            <div class="contacts-block">
+                <h3>Contacts</h3>
+                <a href="#" class="call fa fa-phone"> 8 800 2563 123</a>
+                <a href="#" class="email fa fa-envelope-o">emil@yoursite.com</a>
+                <a href="#" class="address fa fa-home">27 Division St, New York, NY 10002, United States</a>
+            </div>
+
+            <div class="side-menu-form">
+                <div class="email-form">
+                    <label for="email4" style="display:none">Your email</label>
+                    <input id="email4" class="input" type="email" placeholder="Email Adress">
+                    <a class="btn-side-menu" href="/">Signup</a>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="./" target="_blank" class="twitter social fa fa-twitter"></a>
+                <a href="./" target="_blank" class=" fb social fa fa-facebook"></a>
+                <a href="./" target="_blank" class="google social fa fa-google-plus"></a>
+                <a href="./" target="_blank" class="pinterest social fa fa-pinterest"></a>
+                <a href="./" target="_blank" class="linkedin social fa fa-linkedin"></a>
+            </div>
+
+        </aside>
+
+       
+
+    </header>
+
+    <main >
+        <!-- back to top: start -->
+        <div>
+            <button class="btn-back2top fa fa-angle-up"></button>
+        </div>
+        <!-- back to top: end -->
+        
+        <!-- hero: start -->
+        <section class="container no-overflow">
+            <div class="row section-hero">
+                <div class="col-12 col-md-7 hero-image">
+                    <div class="hero-image-wraper" id="hiw">
+                        <img  src="./img/hero/hero-main-image.jpeg" alt="smiling-girl">
+                        <img class="flying1" id="fly1" src="./img/hero/heros-flying1.png" alt="img1">
+                        <img class="flying2" id="fly2" src="./img/hero/heros-flying2.png" alt="img2">
+                        <img class="flying3" id="fly3" src="./img/hero/heros-flying3.png" alt="img3">
+                        <img class="flying4" id="fly4" src="./img/hero/heros-flying4.png" alt="img4"> 
+                        <img class="x-small-img-left-2" src="./img/flying-objects/x-green.png" alt="">                       
+                                               
+                    </div>
+                </div>      
+                <div class="col-12 col-md-5 hero-content-margin">
+                    <div class="hero-content">
+                        <h1 class="hero-heading-text gradient-text">
+                            Digital<br>
+                            Marketing<br>
+                            <span class="typingText" id="typingText"></span>
+                        </h1>
+                            
+                            
+                        
+                        <p class="column-paragraph-bigger">Ensuring the best return on investment for your bespoke SEO campaign requirement.</p>
+                        <form class="form hero-form">
+                            <label for="website">Website</label>
+                            <input id="website" class="input" type="url"  placeholder="https:// yoursite.com">
+                            <button class="btn-hero" type="submit">Analyze your site</button>
+                        </form>
+                        <div class="row">
+                            <div class="col-12 col-md-2 contact-margin-1">
+                                <a href="mailto:info@company.com">
+                                    <img class="phone-icon" src="./img/hero/hero-icon-contact.png" alt="phone-icon">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-11 contact-margin-2">
+                                <p><a class="hero-phone" href="tel:8001234567">800-123-4567</a></p>
+                                <p><a class="hero-email" href="mailto:info@company.com">info@company.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flying-obj" class="example">
+                        <img class="x-small-img-left" src="./img/flying-objects/x-green.png" alt="x-green">                       
+                        <img class="x-large-img-left" src="./img/flying-objects/x-blue.png" alt="x-blue">                       
+                        <img class="triangle-img-left" src="./img/flying-objects/triangle_orange.png" alt="triangle_orange">
+                        <img class="triangle-img-right" src="./img/flying-objects/triangle_blue.png" alt="triangle_blue"    >
+                        <img class="circle-img-right" src="./img/flying-objects/circle.png" alt="circle">
+                        <img class="x-small-img-right" src="./img/flying-objects/x-green.png" alt="x-green">
+                        <img class="x-large-img-right" src="./img/flying-objects/x-blue.png" alt="x-blue">
+                        <img class="x-small-img-left2" src="./img/flying-objects/x-green.png" alt="x-green">                       
+                        <img class="x-small-img-left3" src="./img/flying-objects/x-green.png" alt="x-green">                       
+                        <img class="x-large-img-left2" src="./img/flying-objects/x-blue.png" alt="x-blue">                       
+                        <img class="triangle-img-left2" src="./img/flying-objects/triangle_orange.png" alt="triangle_orange">
+                        <img class="triangle-img-right2" src="./img/flying-objects/triangle_blue.png" alt="triangle_blue">
+                        <img class="circle-img-right2" src="./img/flying-objects/circle.png" alt="circle">
+                        <img class="x-small-img-right2" src="./img/flying-objects/x-green.png" alt="x-green">
+                        <img class="x-large-img-right2" src="./img/flying-objects/x-blue.png" alt="x-blue">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero: end -->
+
+        <!-- partners: start -->
+        <div class="container section-partners">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <img class="partner-logo-img" src="./img/partners/partner1.png" alt="Zazzle Media logo">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img class="partner-logo-img" src="./img/partners/partner2.png" alt="Air Track logo">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img class="partner-logo-img" src="./img/partners/partner3.png" alt="Sutra HR logo">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img class="partner-logo-img" src="./img/partners/partner4.png" alt="Sylexcoin logo">
+                </div>
+            </div>
+        </div>
+        <!-- partners: end -->
+
+        <!-- why choose us: start -->
+        <section style="background-image: url(./img/why-choose-us1/background-map.png); background-repeat: no-repeat; background-position: center;" class="container">
+            <div class="row">
+               <div class="col-12 col-lg-6 left-column">
+                    <h5 class="section-name" >why choose us</h5>
+                    <h2 class="column-heading-text">Boost Your Website Traffic!</h2>
+                    <p class="column-paragraph-text">We are passionate about our work. Our designers stay ahead of the curve to provide engaging and user-friendly website designs to make your business stand out. Our developers are committed to maintaining the highest web standards so that your site will withstand the test of time. We care about your business, which is why we work with you.</p>
+                    <a class="btn-why_choose_us" href="#">Discover more</a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 rectangle-zero ">
+                    <div class="rectangle-box">
+                        <img class="rectangle-img" src="./img/why-choose-us1/orage.png" alt="orange">
+                        <a class="rectangle-text" href="#">Discover, Explore the Product</a>
+                    </div>
+                    <div class="rectangle-box">
+                        <img class="rectangle-img" src="./img/why-choose-us1/green.png" alt="green">
+                        <a class="rectangle-text" href="#">Product UX, Design & Development</a>
+                    </div>
+                    <div class="rectangle-box">
+                        <img class="rectangle-img" src="./img/why-choose-us1/cyan.png" alt="cyan">
+                        <a class="rectangle-text" href="#">Art Direction & Brand Strategy</a>
+                    </div>
+                    <div class="rectangle-box">
+                        <img class="rectangle-img" src="./img/why-choose-us1/purple.png" alt="purple">
+                        <a class="rectangle-text" href="#">Marketing Strategy & SEO Campaigns</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- why choose us -->
+
+        <!-- experiance: start -->
+        <section class="container experience">
+            <div class="row">
+                    <div class="col-12 col-md-6 column_img" >
+                        <img class="main-img mainImg" id="main-img" src="./img/experience/exp-main-image.jpeg" alt="Cirkule">
+                        <img class="img_phone_screen greenImg animated" id="greenImg" src="./img/experience/exp-flying3.png" alt="phone screen">
+                        <img class="img_phone blueImg animated2" id="blueImg" src="./img/experience/exp-flying2.png" alt="Phone">
+                        <img class="img_id_card infoImg animated3" id="infoImg" src="./img/experience/exp-flying1.png" alt="id Card">
+                    </div>
+                <div class="col-12  col-md-6 col-lg-6">
+                    <p class="section-name">Experience</p>
+                    <h3 class="column-heading-text">Pay for qualified traffic</h3>
+                    <p class="column-paragraph-bigger">Ewebot stays ahead of the curve with digital marketing trends. Our success has us leading the pack amongst our competitors with our ability to anticipate change
+                        and innovation.
+                    </p>
+
+                    <div class="progress-bar">
+
+
+                        <div class="top">
+                            <div class="label">SEO Analysis</div>
+                        </div>
+                        <div class="progress progress1">
+                            <div class="value animated4-2">90%</div>
+                            <div class="bar-hidde">
+                            <div class="bar animated4" ></div>
+                            </div>
+                        </div>
+
+                        <div class="top">
+                            <div class="label">SEO Audit</div>
+                        </div>
+                        <div class="progress progress2">
+                            <div class="value animated5-2">79%</div>
+                            <div class="bar-hidde">
+                                <div class="bar animated5" ></div>
+                            </div>
+                        </div>
+
+                        <div class="top">
+                            <div class="label">Optimization</div>
+                        </div>
+                        <div class="progress progress3">
+                            <div class="value animated6-2">95%</div>
+                            <div class="bar-hidde">
+                                <div class="bar animated6" ></div>
+                            </div>
+                        </div>
+
+                     </div>
+                     <a class="btn-experience" href="#">Discover more</a>
+                </div>
+            </div>
+        </section>
+        <!-- experiance: end -->
+
+        <!-- girl with phone: start -->
+        <div class="container gwp no-overflow">
+            <div class="row section-hero">
+                <div class="col-12 col-md-6 girl-wrap">
+                    <div class="girl-wrap girl-text girl-rectangle">
+                        <div class="girl-text-column">
+                            <div class="girl-rect-inside">
+                                <div class="girl-rect-number gradient-text numeric"></div>
+                                <p class="girl-p column-paragraph-text">Digital global audience reach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="girl-wrap girl-text girl-rectangle">
+                        <div class="girl-text-column">
+                            <div class="girl-rect-inside">
+                                <div class="girl-rect-number gradient-text numeric"></div>
+                                <p class="girl-p column-paragraph-text">Of the audience is under 34 years old</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="girl-wrap girl-text girl-rectangle">
+                        <div class="girl-text-column">
+                            <div class="girl-rect-inside">
+                                <div class="girl-rect-number gradient-text numeric"></div>
+                                <p class="girl-p column-paragraph-text">Content pieces produced everyday</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="girl-wrap girl-text girl-rectangle">
+                        <div class="girl-text-column">
+                            <div class="girl-rect-inside">
+                                <div class="girl-rect-number gradient-text numeric"></div>
+                                <p class="girl-p column-paragraph-text">Employee worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="col-12 col-md-6 girlImage girl-img girl-animate" id="girl-img" src="./img/section-numbers/girl-with_phone-transparent.png" alt="Girl with phone">                                                
+                <div>
+                    <img class="x-small-img-left" src="./img/flying-objects/x-green.png" alt="">                       
+                    <img class="x-large-img-left" src="./img/flying-objects/x-blue.png" alt="">                      
+                    <img class="triangle-img-left" src="./img/flying-objects/triangle_orange.png" alt="">
+                    <img class="triangle-img-right" src="./img/flying-objects/triangle_blue.png" alt="">
+                    <img class="circle-img-right" src="./img/flying-objects/circle.png" alt="">
+                    <img class="x-small-img-right" src="./img/flying-objects/x-green.png" alt="">
+                    <img class="x-large-img-right" src="./img/flying-objects/x-blue.png" alt="">
+                    <img class="x-small-img-left2" src="./img/flying-objects/x-green.png" alt="">                       
+                    <img class="x-small-img-left3" src="./img/flying-objects/x-green.png" alt="">                       
+                    <img class="x-large-img-left2" src="./img/flying-objects/x-blue.png" alt="">                       
+                    <img class="triangle-img-left2" src="./img/flying-objects/triangle_orange.png" alt="">
+                    <img class="triangle-img-right2" src="./img/flying-objects/triangle_blue.png" alt="">
+                    <img class="circle-img-right2" src="./img/flying-objects/circle.png" alt="">
+                    <img class="x-small-img-right2" src="./img/flying-objects/x-green.png" alt="">
+                    <img class="x-large-img-right2" src="./img/flying-objects/x-blue.png" alt="">
+                </div>
+
+            </div>
+            
+        </div>
+        <!-- girl with phone: end -->
+
+        <!-- featured projects: start -->
+        <section class="container featured-projects" id="featured-projects">
+            <div class="row">
+                <div class="col-12 headers">
+                    <h5 class="section-name">Featured projects</h5>
+                    <h2 class="column-heading-text">Our Case Studies</h2>
+                </div>
+            </div>
+
+            
+            <div class="row carousel">
+                <div class="col-12 slides-container">
+                    <div class="slides-wrapper" id="slides-wrapper">
+
+
+                        <div class="slide">
+                            <img src="./img/featured/slide1.jpeg" alt="slide1">
+                                <div class="headers-wrapper">
+                                    <h5>Marketing</h5>
+                                    <h4>Online media management</h4>
+                                </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="./img/featured/slide2.jpg" alt="slide1">
+                                <div class="headers-wrapper">
+                                    <h5>Marketing</h5>
+                                    <h4>Online media management</h4>
+                                </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="./img/featured/slide3.jpg" alt="slide1">
+                                <div class="headers-wrapper">
+                                    <h5>Marketing</h5>
+                                    <h4>Online media management</h4>
+                                </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="./img/featured/slide4.jpg" alt="slide1">
+                                <div class="headers-wrapper">
+                                    <h5>Marketing</h5>
+                                    <h4>Online media management</h4>
+                                </div>
+                        </div>
+                            <!-- main slides -->
+                        <div class="slide">
+                            <a href="#">
+                                <img src="./img/featured/slide1.jpeg" alt="slide1">
+                                    <div class="headers-wrapper">
+                                        <h5>Marketing</h5>
+                                        <h4>Online media management</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slide">
+                            <a href="#">
+                                <img src="./img/featured/slide2.jpg" alt="slide1">
+                                    <div class="headers-wrapper">
+                                        <h5>Marketing</h5>
+                                        <h4>Online media management</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slide">
+                            <a href="#">
+                                <img src="./img/featured/slide3.jpg" alt="slide1">
+                                    <div class="headers-wrapper">
+                                        <h5>Marketing</h5>
+                                        <h4>Online media management</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slide">
+                            <a href="#">
+                                <img src="./img/featured/slide4.jpg" alt="slide1">
+                                    <div class="headers-wrapper">
+                                        <h5>Marketing</h5>
+                                        <h4>Online media management</h4>
+                                </div>
+                            </a>
+                        </div>
+                            <!-- main slidess end -->
+
+                        <div class="slide">
+                            <img src="./img/featured/slide1.jpeg" alt="slide1">
+                                <div class="headers-wrapper">
+                                    <h5>Marketing</h5>
+                                    <h4>Online media management</h4>
+                                </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="./img/featured/slide2.jpg" alt="slide1">
+                                <div class="headers-wrapper">
+                                    <h5>Marketing</h5>
+                                    <h4>Online media management</h4>
+                                </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="./img/featured/slide3.jpg" alt="slide1">
+                                <div class="headers-wrapper">
+                                    <h5>Marketing</h5>
+                                    <h4>Online media management</h4>
+                                </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="./img/featured/slide4.jpg" alt="slide1">
+                                <div class="headers-wrapper">
+                                    <h5>Marketing</h5>
+                                    <h4>Online media management</h4>
+                                </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+                <!-- Violet navigation dots -->
+            <div class="row">
+            <div class="col-12">    
+                    <div class="slides-navigation2">
+                        <ul class="dots3">
+                            <li class="dot3 active" ></li>
+                            <li class="dot3" ></li>
+                            <li class="dot3" ></li>
+                            <li class="dot3" ></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- featured projects: end ???--> 
+
+        <!-- why choose us 2: start -->
+        <section class="container whyus2 no-overflow">
+            <div class="row">
+                <div class="col-12 headers">
+                    <h5 class="section-name">Why choose us</h5>
+                    <h2 class="column-heading-text">What we offer</h2>
+                </div>
+            </div>
+
+            <div class="row whyus2-services section-hero">
+                <div class="col-12 services">
+                    
+                    <img class="bg-ellipse" src="./img/why-choose-us2-services/home10_ellipse2.png" alt="ellipse">
+                    <div class="service-wrapp">
+                        <div class="service">
+                            <div class="service-icon-name-wrapper">
+                                <div class="service-icon service1"></div>
+                                <h4>Seo</h4>
+                            </div>
+                            <p class="service-content">Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an.</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon-name-wrapper">
+                                <div class="service-icon service4"></div>
+                                <h4>Cms</h4>
+                            </div>
+                            <p class="service-content">Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="service-wrapp">
+                        <div class="service">
+                            <div class="service-icon-name-wrapper">
+                                <div class="service-icon service2"></div>
+                                <h4>Development</h4>
+                            </div>
+                            <p class="service-content">Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an.</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon-name-wrapper">
+                                <div class="service-icon service5"></div>
+                                <h4>Maintenance</h4>
+                            </div>
+                            <p class="service-content">Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-wrapp">
+                        <div class="service">
+                            <div class="service-icon-name-wrapper">
+                                <div class="service-icon service3"></div>
+                                <h4>Web design</h4>
+                            </div>
+                            <p class="service-content">Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an.</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon-name-wrapper">
+                                <div class="service-icon service6"></div>
+                                <h4>Hosting</h4>
+                            </div>
+                            <p class="service-content">Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <img class="x-small-img-left" src="./img/flying-objects/x-green.png" alt="">                       
+                    <img class="x-large-img-left" src="./img/flying-objects/x-blue.png" alt="">                       
+                    <img class="triangle-img-left" src="./img/flying-objects/triangle_orange.png" alt="">
+                    <img class="triangle-img-right" src="./img/flying-objects/triangle_blue.png" alt="">
+                    <img class="circle-img-right" src="./img/flying-objects/circle.png" alt="">
+                    <img class="x-small-img-right" src="./img/flying-objects/x-green.png" alt="">
+                    <img class="x-large-img-right" src="./img/flying-objects/x-blue.png" alt="">
+                    <img class="x-small-img-left2" src="./img/flying-objects/x-green.png" alt="">                       
+                    <img class="x-small-img-left3" src="./img/flying-objects/x-green.png" alt="">                       
+                    <img class="x-large-img-left2" src="./img/flying-objects/x-blue.png" alt="">                       
+                    <img class="triangle-img-left2" src="./img/flying-objects/triangle_orange.png" alt="">
+                    <img class="triangle-img-right2" src="./img/flying-objects/triangle_blue.png" alt="">
+                    <img class="circle-img-right2" src="./img/flying-objects/circle.png" alt="">
+                    <img class="x-small-img-right2" src="./img/flying-objects/x-green.png" alt="">
+                    <img class="x-large-img-right2" src="./img/flying-objects/x-blue.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- why choose us 2: end -->
+
+        <!-- get free seo analysis?: start -->
+        <section class="container section-seo">
+            <div class="row">
+                    <img class="col-12 col-md-7 seo-img seo-animate" id="seo-img" src="./img/get-free-seo/home10_img5.jpg" alt="smiling girl working">
+                <div class="col-12 col-md-5">
+                    <h2 class="column-heading-text">Get Free SEO Analysis?</h2>
+                    <p class="column-paragraph-bigger">Ne summo dictas pertinacia nam. Illum cetero vocent ei vim, case regione signiferumque vim te.</p>
+                    <form class="form seo-form">  
+                        <label for="name">Your name</label>
+                        <input id="name" class="input" type="text" placeholder="Your name*" required> <!-- required field -->
+                        <label for="email2">Your email</label>
+                        <input id="email2" class="input" type="email" placeholder="Your email*" required> <!-- required field -->
+                        <label for="phone">Phone</label>
+                        <input id="phone" class="input" type="tel" placeholder="Phone">
+                        <label for="website2">Website</label>
+                        <input id="website2" class="input" type="url" placeholder="Website*" required> <!-- required field -->
+                        <label for="message">Message</label>
+                        <textarea id="message" class="textarea" name="message" placeholder="Message"></textarea>
+                        <button class="btn-get_free_seo_analysis" type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>        
+        <!-- get free seo analysis?: end -->
+
+        <!-- blog: start -->
+        <section class="container blog-section no-overflow">
+            <div class="row">
+                <div class="col-12 blog-title">
+                <h5 class="section-name">BLOG</h5>
+                <h2 class="column-heading-text">Latest News</h2>
+                <p class="column-paragraph-text">Ad nec unum copiosae. Sea ex everti labores, ad option iuvaret qui. Id quo esse nusquam. Eam iriure diceret oporteat.</p>
+                </div>
+            </div>
+
+            <div class="row blog-columns-all section-hero">
+                <div class="col-12 blog-columns-box ">
+
+                    <div class="blog-columns">
+                        <div class="bg-img-container">
+                            <img class="blog-bg-image" src="./img/blog/blog_img_01-300x300.jpg" alt="">
+                        </div>
+                        <div class="blog-box-wrap">
+                            <p style="margin-bottom: 10px;">August 2, 2022</p>
+                            <h4>
+                                <a style="text-decoration: none;" href="#">How to Increase Your ROI Through scientific SEM?</a>
+                            </h4>
+
+                            <div class="blog-container-flex">
+                                <div class="blog-read-more">
+                                    <h5>
+                                        <a style="text-decoration: none;" href="#">READ MORE</a>
+                                    </h5>
+                                </div>
+                                <div class="icons">
+                                    <a class="fa fa-facebook icon" href="#"></a>
+                                    <a class="fa fa-twitter icon" href="#"></a>
+                                    <a class="fa fa-pinterest icon" href="#"></a>
+                                    <a class="fa fa-linkedin icon" href="#"></a>
+                                    <a class="fa fa-envelope-o icon" href="#"></a>
+                                    <a class="fa fa-share-alt icon" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blog-columns">
+                        <div class="bg-img-container">
+                            <img class="blog-bg-image" src="./img/blog/blog_post_02-300x300.jpg" alt="">
+                        </div>
+                        <div class="blog-box-wrap">
+                            <p style="margin-bottom: 10px;">August 1, 2022</p>
+                            <h4>
+                                <a style="text-decoration: none;" href="#">Simple Ways To Optimize Your Website For SEO</a>
+                            </h4>
+
+                            <div class="blog-container-flex">
+                                <div class="blog-read-more">
+                                    <h5>
+                                        <a style="text-decoration: none;" href="#">READ MORE</a>
+                                    </h5>
+                                </div>
+                                <div class="icons">
+                                    <a class="fa fa-facebook icon" href="#"></a>
+                                    <a class="fa fa-twitter icon" href="#"></a>
+                                    <a class="fa fa-pinterest icon" href="#"></a>
+                                    <a class="fa fa-linkedin icon" href="#"></a>
+                                    <a class="fa fa-envelope-o icon" href="#"></a>
+                                    <a class="fa fa-share-alt icon" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-columns">
+                        <div class="bg-img-container">
+                            <img class="blog-bg-image" src="./img/blog/blog_post_03-300x300.jpg" alt="">
+                        </div>
+                        <div class="blog-box-wrap">
+                            <p style="margin-bottom: 10px;">August 1, 2022</p>
+                            <h4>
+                                <a style="text-decoration: none;" href="#">The Basics of Blogging Search Optimization</a>
+                            </h4>
+
+                            <div class="blog-container-flex">
+                                <div class="blog-read-more">
+                                    <h5>
+                                        <a style="text-decoration: none;" href="#">READ MORE</a>
+                                    </h5>
+                                </div>
+                                <div class="icons">
+                                    <a class="fa fa-facebook icon" href="#"></a>
+                                    <a class="fa fa-twitter icon" href="#"></a>
+                                    <a class="fa fa-pinterest icon" href="#"></a>
+                                    <a class="fa fa-linkedin icon" href="#"></a>
+                                    <a class="fa fa-envelope-o icon" href="#"></a>
+                                    <a class="fa fa-share-alt icon" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div>
+                    <img class="x-small-img-left" src="./img/flying-objects/x-green.png" alt="">                       
+                    <img class="x-large-img-left" src="./img/flying-objects/x-blue.png" alt="">                       
+                    <img class="triangle-img-left" src="./img/flying-objects/triangle_orange.png" alt="">
+                    <img class="triangle-img-right" src="./img/flying-objects/triangle_blue.png" alt="">
+                    <img class="circle-img-right" src="./img/flying-objects/circle.png" alt="">
+                    <img class="x-small-img-right" src="./img/flying-objects/x-green.png" alt="">
+                    <img class="x-large-img-right" src="./img/flying-objects/x-blue.png" alt="">
+                    <img class="x-small-img-left2" src="./img/flying-objects/x-green.png" alt="">                       
+                    <img class="x-small-img-left3" src="./img/flying-objects/x-green.png" alt="">                       
+                    <img class="x-large-img-left2" src="./img/flying-objects/x-blue.png" alt="">                       
+                    <img class="triangle-img-left2" src="./img/flying-objects/triangle_orange.png" alt="">
+                    <img class="triangle-img-right2" src="./img/flying-objects/triangle_blue.png" alt="">
+                    <img class="circle-img-right2" src="./img/flying-objects/circle.png" alt="">
+                    <img class="x-small-img-right2" src="./img/flying-objects/x-green.png" alt="">
+                    <img class="x-large-img-right2" src="./img/flying-objects/x-blue.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- blog: end -->
+
+        <!-- got new project: start -->
+        <section class="container section-got-new-project">
+            <div class="row">
+                <div class="col-12 got_new_project">
+                    <h2 class="got-new-project-heading-text gradient-text" >Got new project?</h2>
+                    <p class="column-paragraph-bigger">Call us for fast support to this number.</p>
+                    <a class="phone_nr" href="tel:8002563123">800 2563 123</a>
+                    <a href="mailto:info@company.com" class="btn-got_new_project">Send message</a>
+                </div>
+            </div>
+        </section>
+        <!-- got new project: end -->
+
+        <!-- testimonials: start -->
+
+        <section class="container testimonials" id="testimonials">
+            <div class="row">
+                <!-- Column1 -->
+                <div  class="col-12 col-md-5 col-lg-4 column1">
+                    <div class="headers-wrapper animated">
+                        <h5 class="section-name">Testimonials</h5>
+                        <h2 class="column-heading-text">What Our Clients Say</h2>
+                    </div>
+                    <p class="column-paragraph-text">Ewebot stays ahead of the curve with digital marketing trends.</p> 
+                    <img class="background animated2" src="./img/testimonials/home10_quote.png" alt="quote">
+                </div>
+                <!-- Column 2 -->
+                <div class="col-12 col-md-7 col-lg-8 testimonial-wrapp">
+                    <div class="balloon" id="balloon">
+
+                        <div class="slides" id="slides">
+
+
+                                <div class="slides-container" id="slides-container">
+
+                                    <div class="balloon-content slide2">
+                                            <img class="balloon-quotes" src="./img/testimonials/qoutes.png" alt="quotes">
+                                            <div class="testimonial">
+                                                <p class="testimonial-text">Design is a way of life, a point of view. It involves the whole complex of visual commun ications: talen.t, creative ability manual skill.</p>
+                                                <div class="author">
+                                                    <img src="./img/testimonials/author1.jpg" alt="author img">
+                                                    <div class="name">
+                                                        <div class="author-name">Denis Robinson</div>
+                                                        <div class="author-subname">Customer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="balloon-content slide2">
+                                        <img class="balloon-quotes" src="./img/testimonials/qoutes.png" alt="quotes">
+                                        <div class="testimonial">
+                                            <p class="testimonial-text">Design is a way of life, a point of view. It involves the whole complex of visual commun ications: talen.t, creative ability manual skill. Design is a way of life, a point of view. It involves the whole complex of visual commun ications: talen.t, creative ability manual skill.</p>
+                                            <div class="author">
+                                                <img src="./img/testimonials/author2.png" alt="author img">
+                                                <div class="name">
+                                                    <div class="author-name">John Johnson</div>
+                                                    <div class="author-subname">Project manager</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="balloon-content slide2">
+                                        <img class="balloon-quotes" src="./img/testimonials/qoutes.png" alt="quotes">
+                                        <div class="testimonial">
+                                            <p class="testimonial-text">Design is a way of life, a point of view. It involves the whole complex of visual commun ications: talen.t, creative ability manual skill. Design is a way of life, a point of view. It involves the whole complex of visual commun ications: talen.t, creative ability manual skill.</p>
+                                            <div class="author">
+                                                <img src="./img/testimonials/author3.jpg" alt="author img">
+                                                <div class="name">
+                                                    <div class="author-name">Silvia Swanson</div>
+                                                    <div class="author-subname">Influencer</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            
+                        </div>
+                        
+
+
+                    </div>
+                    <div class="slides-navigation">
+                        <ul class="dots">
+                            <li class="dot active"></li>
+                            <li class="dot" ></li>
+                            <li class="dot" ></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- testimonials: end -->
+    </main>
+
+    <footer>
+        <section style="margin-bottom: 0;padding-bottom: 0;" class="container">
+            <div style="margin-bottom: 0;" class="row"> 
+                <div class="row col-12 footer-top section-title">
+                    <div class="col-12 col-md-12 col-lg-6 footer-contacts">
+                        <div style="margin-right: 20px;" class="footer-contacts">
+                            <div class="footer-wrapper">
+                                <img class="footer-img" src="./img/footer/img_box_29_violet.png" alt="">
+                                <p class="column-paragraph-text socials-text" >8 800 2534 236 <br>
+                                    email@yoursite.com</p>
+                            </div>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="footer-wrapper">
+                                <img class="footer-img" src="./img/footer/img_box_30_violet.png" alt="">
+                                <p class="column-paragraph-text socials-text" >27 Division St, New York, NY <br>
+                                    10002, United States</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-left:0; margin-right: 0; width: 100%;" class="col-md-12 col-lg-6 form-section">
+                        <label for="email3" style="display:none">Your email</label>
+                        <input id="email3" class="input" type="email" placeholder="Email Adress">
+                        <a class="form-button-position btn-footer" href="#">Signup</a>
+                    </div>
+                </div>
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <h4 class="column-heading-text" >About</h4>
+                        <p class="column-paragraph-text socials-text" >We focus on the needs of small to middle market businesses to improve and grow their return.</p>
+                        <div class="footer-fonts">
+                            <a href="#" class="twitter social fa fa-twitter"></a>
+                            <a href="#" class=" fb social fa fa-facebook"></a>
+                            <a href="#" class="google social fa fa-google-plus"></a>
+                            <a href="#" class="pinterest social fa fa-pinterest"></a>
+                            <a href="#" class="linkedin social fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 footer-columns">
+                        <h4 class="column-heading-text">Services</h4>
+                            <a class="footer-columns-text" href="#">SEO Marketing</a>
+                            <a class="footer-columns-text" href="#">SEO Services</a>
+                            <a class="footer-columns-text" href="#">Pay Per Click</a>
+                            <a class="footer-columns-text" href="#">Social Media</a>
+                            <a class="footer-columns-text" href="#">Seo Audit</a>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 footer-columns">
+                        <h4 class="column-heading-text" >Comunity</h4>
+                            <a class="footer-columns-text" href="#">Our Product</a>
+                            <a class="footer-columns-text" href="#">Documentation</a>
+                            <a class="footer-columns-text" href="#">Our Services</a>
+                            <a class="footer-columns-text" href="#">Company</a>
+                            <a class="footer-columns-text" href="#">What We Do?</a>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 footer-columns">
+                        <h4 class="column-heading-text" >Quicklinks</h4>
+                            <a class="footer-columns-text" href="#">Home</a>
+                            <a class="footer-columns-text" href="#">About Us</a>
+                            <a class="footer-columns-text" href="#">Main Services</a>
+                            <a class="footer-columns-text" href="#">Pricing</a>
+                            <a class="footer-columns-text" href="#">Our Cases</a>
+                    </div>
+                <div class="col-12 footer-section-title">
+                    <p class="column-paragraph-text">&copy; 2023 — Ewebot by GT3Themes. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script type="module" src="./js/pages/home.js"></script>
 </body>
 
 </html>
