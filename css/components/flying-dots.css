@@ -6,6 +6,7 @@
     left:0;
     width:100vw;
     height:100vh;
+    z-index:-1;
 }
 
 .flying-dots-wrapper>.dot.orange {
@@ -74,19 +75,19 @@
         opacity:1;
     }
     40%{
-        bottom: calc(var(--y) + 300px);
+        bottom: calc(var(--y) + 200px);
         left: calc(var(--x) + 80px);
     }
 
     80%{
-        bottom: calc(var(--y) + 500px);
+        bottom: calc(var(--y) + 400px);
         left: calc(var(--x) - 90px);
         opacity:1;
 
     }
 
     100%{
-        bottom: calc(var(--y) + 700px);
+        bottom: calc(var(--y) + 500px);
         left: calc(var(--x) - 120px);
         opacity: 0;
     }
