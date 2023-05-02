@@ -6,6 +6,7 @@ import { carousel } from "../components/featured.js";
 import { imgPositioning, observer2, heroFlyingElements } from "../components/flyingphones.js";
 
 import { menuScrolled  } from "../components/header.js";
+import { randomInteger } from "../components/flying-dots.js";
 // FUNCTION EXECUTION
 
 
@@ -257,3 +258,7 @@ observer2.observe(document.getElementById('seo-img'));
 
 /* footer: start */
 /* footer: end */
+
+// Flying dots
+
+
