@@ -18,7 +18,7 @@ function randomInteger(min, max) {
   function naujasTaskiukas(){
     let taskiukai = taskiukaiDiv.querySelectorAll('.dot');
     console.log(taskiukai.length);
-    time = randomInteger(6,10);
+    time = randomInteger(8,11);
     animation = randomInteger(1,2);
 
     if (i < 15){
