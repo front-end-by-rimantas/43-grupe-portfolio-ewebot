@@ -6,7 +6,7 @@ import { carousel } from "../components/featured.js";
 import { imgPositioning, observer2, heroFlyingElements } from "../components/flyingphones.js";
 
 import { menuScrolled  } from "../components/header.js";
-import { randomNumber } from "../components/flying-dots.js";
+import { randomInteger } from "../components/flying-dots.js";
 // FUNCTION EXECUTION
 
 
@@ -261,22 +261,4 @@ observer2.observe(document.getElementById('seo-img'));
 
 // Flying dots
 
-randomNumber();
-randomNumber();
-randomNumber();
 
-let w = window.innerWidth;
-let h = window.innerHeight;
-
-
-const taskiukaiDiv = document.getElementById('flying-dots-wrapper');
-const taskiukai = document.querySelectorAll('#flying-dots-wrapper .dot');
-console.log(taskiukai);
-
-function rndPozicija(){
-  let startY = Math.round(h/3 * randomNumber());
-  taskiukaiDiv.style.setProperty('--start-positiony', startY + 'px');
-  console.log('asdass')
-}
-
-let intervalas = setInterval(rndPozicija, 1000);

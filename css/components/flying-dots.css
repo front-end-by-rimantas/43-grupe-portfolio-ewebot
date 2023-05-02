@@ -8,21 +8,40 @@
     height:100vh;
 }
 
-.flying-dots-wrapper>.dot{   
+.flying-dots-wrapper>.dot.orange {
+    background-color: #FEA039;
+}
+
+.flying-dots-wrapper>.dot.green {
+    background-color: rgb(80, 189, 80);
+}
+
+.flying-dots-wrapper>.dot.cyan {
+    background-color: #04b6f7;
+}
+
+.flying-dots-wrapper>.dot.violet {
+    background-color: #630353;
+}
+
+.flying-dots-wrapper>.dot.pink {
+    background-color: #ff06fb;
+}
+
+.flying-dots-wrapper>.dot.animation{   
         position:absolute;
         bottom:-10px;
-		width: 20px;
-		height: 20px;
-		background: #FEA039;
+		width: 4px;
+		height: 4px;
 		border-radius: 50%;
-        animation-name:taskiukas;
+        animation-name:var(--animation);
         animation-delay: var(--delay);
-        animation-duration: 8s;
+        animation-duration: var(--time);
         animation-iteration-count: infinite;
         animation-timing-function: linear;
 }
 
-@keyframes taskiukas {
+@keyframes taskiukai1 {
     0%{ 
         bottom: var(--y);
         left: var(--x);
@@ -43,6 +62,32 @@
     100%{
         bottom: calc(var(--y) + 300px);
         left: calc(var(--x) - 40px);
+        opacity: 0;
+    }
+
+}
+
+@keyframes taskiukai2 {
+    0%{ 
+        bottom: var(--y);
+        left: var(--x);
+        opacity:1;
+    }
+    40%{
+        bottom: calc(var(--y) + 300px);
+        left: calc(var(--x) + 80px);
+    }
+
+    80%{
+        bottom: calc(var(--y) + 500px);
+        left: calc(var(--x) - 90px);
+        opacity:1;
+
+    }
+
+    100%{
+        bottom: calc(var(--y) + 700px);
+        left: calc(var(--x) - 120px);
         opacity: 0;
     }
 
